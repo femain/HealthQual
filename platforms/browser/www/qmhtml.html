@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Quality Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+      
+       
+
+    </head>
+    <body>
+         
+        <div data-role="page" id="qmpage" class="qm">
+  <div data-role="header" style="text-align:left;"data-type="honrizontal">
+    <h2><b>Quality Management</b></h2> 
+    <a href="hqmhtml.html" class="ui-btn ui-corner-all ui-shadow ui-icon-home">Home</a>
+     
+  </div>
+          
+  <div data-role="main" class="ui-content">
+    <h3> Quality Management Program</h3>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <form name="qm1">
+    <p>Q1: The Hospital has a Quality Management System that includes a defined Quality Policy and Quality Management Program
+    <input type="radio" name="q1" value="1">1
+<input type="radio" name="q1" value="2">2
+<input type="radio" name="q1" value="3">3
+<input type="radio" name="q1" value="4">4</p>
+
+ <p>Q2: Executive Management consults the Medical Committee, Director of Nursing, Technical Committee and the Hospital Staff in developing the Quality Management Program.
+        <input type="radio" name="q2" value="1">1
+<input type="radio" name="q2" value="2">2
+<input type="radio" name="q2" value="3">3
+<input type="radio" name="q2" value="4">4</p>
+<p>Q3: The Hospital Quality Management Program has Quality Goals which can be measured over time. 
+    <input type="radio" name="q3" value="1">1
+<input type="radio" name="q3" value="2">2
+<input type="radio" name="q3" value="3">3
+<input type="radio" name="q3" value="4">4</p>
+<p>Q4: The Hospital Quality Program is incorporated into the Development Plan of the Hospital.
+    <input type="radio" name="q4" value="1">1
+<input type="radio" name="q4" value="2">2
+<input type="radio" name="q4" value="3">3
+<input type="radio" name="q4" value="4">4</p>
+
+ <p>Q5: Hospital Management ensures all Staff are informed about the Quality Policy and Quality Goals of the Hospital.
+     <input type="radio" name="q5" value="1">1
+<input type="radio" name="q5" value="2">2
+<input type="radio" name="q5" value="3">3
+<input type="radio" name="q5" value="4">4</p>
+<p>Q6: Hospital Management review all Staff Job Descriptions to include Quality Management Responsibilities.
+<input type="radio" name="q6" value="1">1
+<input type="radio" name="q6" value="2">2
+<input type="radio" name="q6" value="3">3
+<input type="radio" name="q6" value="4">4</p>
+<p>Q7: Hospital Management lead by example in driving Quality Initiatives, especially those concerning Patient Safety, Safety of staff and Visitors.
+    <input type="radio" name="q7" value="1">1
+<input type="radio" name="q7" value="2">2
+<input type="radio" name="q7" value="3">3
+<input type="radio" name="q7" value="4">4</p>
+<p>Q8: Hospital has a Quality Improvement-oriented environment and atmosphere, that constantly challenges members of staff to improve Care Processes.
+    <input type="radio" name="q8" value="1">1
+<input type="radio" name="q8" value="2">2
+<input type="radio" name="q8" value="3">3
+<input type="radio" name="q8" value="4">4</p>
+<p>Q9: Hospital Management provide direction and support for Continuous Improvement of Quality throughout the Hospital <input type="radio" name="q9" value="1">1
+<input type="radio" name="q9" value="2">2
+<input type="radio" name="q9" value="3">3
+<input type="radio" name="q9" value="4">4</p>
+<p>Q10: Hospital Management periodically reviews the quality of Clinical and Non-clinical Services.  <input type="radio" name="q10" value="1">1
+<input type="radio" name="q10" value="2">2
+<input type="radio" name="q10" value="3">3
+<input type="radio" name="q10" value="4">4</p>
+
+
+      </form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         
+         <a href="#hqmpage" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage2" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="show_sum1">Next</a>
+         <script>function sumf1() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum1').on('click', function() {
+    alert(sumf1());
+    if (window.localStorage) {
+                localStorage.setItem("f1", "sumf1()"); 
+		alert("The data has been stored successfully.");
+	}
+            
+   
+});</script> 
+         
+         <h5>&copy; bestratedhospitals.org</h5>
+  </div>
+
+  </div>
+</div> 
+
+<div data-role="page" id="qmpage2"class="qm">
+  <div data-role="header">
+  <h2><b>Quality Management</b></h2> 
+  </div>
+<form name="qm2">
+  <div data-role="main" class="ui-content">
+    
+    <h3>Quality Management Program</h3>
+   <p>Q11: Hospital Management uses a multi-professional approach to prioritize Quality Management Initiatives for Implementation
+    <input type="radio" name="q11" value="1">1
+<input type="radio" name="q11" value="2">2
+<input type="radio" name="q11" value="3">3
+<input type="radio" name="q11" value="4">4</p>
+
+<p>Q12: Hospital Management controls Processes and Jobs with Quality Guidelines in form of documents, protocols, posters and checklists. 
+<input type="radio" name="q12" value="1">1
+<input type="radio" name="q12" value="2">2
+<input type="radio" name="q12" value="3">3
+<input type="radio" name="q12" value="4">4</p>
+<p>Q13: Hospital has a Document management system for documents like Procedures, Protocols, regulatory texts and professional recommendations. 
+    <input type="radio" name="q13" value="1">1
+<input type="radio" name="q13" value="2">2
+<input type="radio" name="q13" value="3">3
+<input type="radio" name="q13" value="4">4</p>
+<p>Q14: Hospital has a multidisciplinary Quality Management Team headed by a Quality Manager. 
+    <input type="radio" name="q14" value="1">1
+<input type="radio" name="q14" value="2">2
+<input type="radio" name="q14" value="3">3
+<input type="radio" name="q14" value="4">4</p>
+
+<p>Q15: Hospital Quality Management Team meets at least monthly to discuss Quality data, Quality Improvement and monitor Progress. 
+    <input type="radio" name="q15" value="1">1
+<input type="radio" name="q15" value="2">2
+<input type="radio" name="q15" value="3">3
+<input type="radio" name="q15" value="4">4</p>
+<p>Q16: Hospital Management prioritizes the Quality Management Program with support of Organizational Resources including technology and funds. 
+<input type="radio" name="q16" value="1">1
+<input type="radio" name="q16" value="2">2
+<input type="radio" name="q16" value="3">3
+<input type="radio" name="q16" value="4">4</p>
+
+ <p>Q17:Hospital Management produces an annual Quality Management Plan which outlines the Quality Goals for the year.  
+<input type="radio" name="q17" value="1">1
+<input type="radio" name="q17" value="2">2
+<input type="radio" name="q17" value="3">3
+<input type="radio" name="q17" value="4">4</p>
+<p>Q18: Quality Management Plan includes quality improvement methods like PDSA-“Plan-Do-Study-Act”, Lean, Six Sigma.
+<input type="radio" name="q18" value="1">1
+<input type="radio" name="q18" value="2">2
+<input type="radio" name="q18" value="3">3
+<input type="radio" name="q18" value="4">4</p>
+ 
+ 
+  <p>Q19: Hospital Management ensure Clinicians use recognized and reputable clinical practice guidelines and pathways to guide patient care processes. 
+ <input type="radio" name="q19" value="1">1
+<input type="radio" name="q19" value="2">2
+<input type="radio" name="q19" value="3">3
+<input type="radio" name="q19" value="4">4</p>
+<p>Q20: Hospital Management ensure Current evidence-based guidelines are adopted for Care and treatment in high volume or high risk procedures. 
+<input type="radio" name="q20" value="1">1
+<input type="radio" name="q20" value="2">2
+<input type="radio" name="q20" value="3">3
+<input type="radio" name="q20" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+             <a href="#qmpage1" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage3" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum2">Next</a>
+           <script>function sumf2() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum2').on('click', function() {
+    alert(sumf2());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="qmpage3"class="qm">
+  <div data-role="header">
+    <h2><b>Quality Management</b></h2> 
+  </div>
+<form name="qm3">
+  <div data-role="main" class="ui-content">
+      <p>Q21: Hospital Management ensure Quality Goals and Actions are prioritized in the Quality Management Team meetings as evidenced in the minutes of the meeting.
+<input type="radio" name="q21" value="1">1
+<input type="radio" name="q21" value="2">2
+<input type="radio" name="q21" value="3">3
+<input type="radio" name="q21" value="4">4</p>
+<p>Q22: Hospital Management Board regularly receives and acts on reports of the Quality Management Program. 
+<input type="radio" name="q22" value="1">1
+<input type="radio" name="q22" value="2">2
+<input type="radio" name="q22" value="3">3
+<input type="radio" name="q22" value="4">4</p>
+<p>Q23: Hospital Management regularly reviews Clinical Audit Data and Performance Measurements and take actions as indicated. 
+<input type="radio" name="q23" value="1">1
+<input type="radio" name="q23" value="2">2
+<input type="radio" name="q23" value="3">3
+<input type="radio" name="q23" value="4">4</p>
+
+<p>Q24: Hospital Management periodically assesses its Structures, Processes and Outcomes based on the standards in the Quality Management Plan. 
+<input type="radio" name="q24" value="1">1
+<input type="radio" name="q24" value="2">2
+<input type="radio" name="q24" value="3">3
+<input type="radio" name="q24" value="4">4</p>
+<p>Q25: Hospital Quality Management Plan lists the indicators that are monitored including but not limited to patient numbers, lengths of stay and bed occupancy for Utilization Management. 
+<input type="radio" name="q25" value="1">1
+<input type="radio" name="q25" value="2">2
+<input type="radio" name="q25" value="3">3
+<input type="radio" name="q25" value="4">4</p>
+<p>Q26: Hospital Management ensure its Units develop and evaluate the use of Protocols by Healthcare Professionals in needed areas. 
+<input type="radio" name="q26" value="1">1
+<input type="radio" name="q26" value="2">2
+<input type="radio" name="q26" value="3">3
+<input type="radio" name="q26" value="4">4</p>
+<p>Q27: Hospital Management define Outcome Indicators that is included in the Quality Management Program. 
+<input type="radio" name="q27" value="1">1
+<input type="radio" name="q27" value="2">2
+<input type="radio" name="q27" value="3">3
+<input type="radio" name="q27" value="4">4</p>
+<p>Q28: Hospital Quality Management Program takes account of Stakeholder Needs including Patient requirements, Patient Satisfaction level, Healthcare Professional Needs and Staff Satisfaction Levels. 
+<input type="radio" name="q28" value="1">1
+<input type="radio" name="q28" value="2">2
+<input type="radio" name="q28" value="3">3
+<input type="radio" name="q28" value="4">4</p>
+<p>Q29: Hospital Management use information collected from Stakeholder Needs Analysis is used to establish or modify the Quality Management Program. 
+<input type="radio" name="q29" value="1">1
+<input type="radio" name="q29" value="2">2
+<input type="radio" name="q29" value="3">3
+<input type="radio" name="q29" value="4">4</p>
+<p>Q30:  Hospital Management has Training Program for all cadre of Staff that is consistent with their role in the Quality Management Program.
+<input type="radio" name="q30" value="1">1
+<input type="radio" name="q30" value="2">2
+<input type="radio" name="q30" value="3">3
+<input type="radio" name="q30" value="4">4</p> 
+  </div>
+</form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+          <a href="#qmpage2" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage4" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum3">Next</a>
+       <script>function sumf3() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum3').on('click', function() {
+    alert(sumf3());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="qmpage4"class="qm">
+  <div data-role="header">
+    <h2><b>Quality Management</b></h2> 
+  </div>
+<form name="qm4">
+  <div data-role="main" class="ui-content">
+   <p>Q31: Hospital Management consults with concerned External Stakeholders regarding the effect of Job changes on the Quality of Care in the Care Network.
+       <input type="radio" name="q31" value="1">1
+<input type="radio" name="q31" value="2">2
+<input type="radio" name="q31" value="3">3
+<input type="radio" name="q31" value="4">4</p>
+
+<p>Q32: Hospital Management meticulously reviews and plans for effect of Job Changes on the Quality of Care Processes.
+    <input type="radio" name="q32" value="1">1
+<input type="radio" name="q32" value="2">2
+<input type="radio" name="q32" value="3">3
+<input type="radio" name="q32" value="4">4</p>
+
+
+<p>Q33:Quality Management Team members receive in-depth training on Quality Improvement Methodologies to monitor the organization’s clinical structures, processes and outcomes. 
+    <input type="radio" name="q33" value="1">1
+<input type="radio" name="q33" value="2">2
+<input type="radio" name="q33" value="3">3
+<input type="radio" name="q33" value="4">4</p>
+<p>Q34:Hospital staff and Frontline Healthcare Professionals receive basic Quality and Safety Management training. 
+    <input type="radio" name="q34" value="1">1
+<input type="radio" name="q34" value="2">2
+<input type="radio" name="q34" value="3">3
+<input type="radio" name="q34" value="4">4</p>
+<p>Q35: Hospital Executive Management receive training in Quality Awareness, Change Management, Management Indicators and Data for decision making. 
+<input type="radio" name="q35" value="1">1
+<input type="radio" name="q35" value="2">2
+<input type="radio" name="q35" value="3">3
+<input type="radio" name="q35" value="4">4</p>
+<b>Health Promotion Program</b>
+<p>Q36: Health Promotion is clearly stated amongst the Hospital's Mission and Objectives 
+    <input type="radio" name="q36" value="1">1
+<input type="radio" name="q36" value="2">2
+<input type="radio" name="q36" value="3">3
+<input type="radio" name="q36" value="4">4</p>
+<p>Q37: Hospital Quality Management Program includes a Health Promotion Policy focused on improving health outcomes.
+    <input type="radio" name="q37" value="1">1
+<input type="radio" name="q37" value="2">2
+<input type="radio" name="q37" value="3">3
+<input type="radio" name="q37" value="4">4</p>
+<p>Q38: The Health Promotion Policy includes Responsibilities for implementation, evaluation and regular review of the Health Promotion Policy.
+    <input type="radio" name="q38" value="1">1
+<input type="radio" name="q38" value="2">2
+<input type="radio" name="q38" value="3">3
+<input type="radio" name="q38" value="4">4</p>
+<p>Q39: Hospital Management has formally adopted the Health Promotion Policy evidenced with minutes or instructions from the Medical Director. 
+    <input type="radio" name="q39" value="1">1
+<input type="radio" name="q39" value="2">2
+<input type="radio" name="q39" value="3">3
+<input type="radio" name="q39" value="4">4</p>
+<p>Q40: The Hospital Health Promotion policy explicitly refers to Health Promotion for Patients, Staff and Community  
+<input type="radio" name="q40" value="1">1
+<input type="radio" name="q40" value="2">2
+<input type="radio" name="q40" value="3">3
+<input type="radio" name="q40" value="4">4</p>
+  </div>
+  </form>
+    
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#qmpage3" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage5" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum4">Next</a>
+           
+  <script>function sumf4() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum4').on('click', function() {
+    alert(sumf4());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="qmpage5"class="qm">
+  <div data-role="header">
+    <h2><b>Quality Management</b></h2> 
+  </div>
+<form name="qm5">
+  <div data-role="main" class="ui-content">
+   <p>Q41: Hospital Management supports Health Promotion with funds and resources for implementation, evaluation and regular review of Health Promotion activities.</p>
+    <input type="radio" name="q41" value="1">1
+<input type="radio" name="q41" value="2">2
+<input type="radio" name="q41" value="3">3
+<input type="radio" name="q41" value="4">4
+
+ <p>Q42: Hospital Management ensure Health Promotion is incorporated into Clinical Practice Guidelines and Pathways in Clinical Departments. 
+        <input type="radio" name="q42" value="1">1
+<input type="radio" name="q42" value="2">2
+<input type="radio" name="q42" value="3">3
+<input type="radio" name="q42" value="4">4</p>
+<p>Q43: Hospital Management collects and evaluates data to monitor the quality of health promotion activities. 
+    <input type="radio" name="q43" value="1">1
+<input type="radio" name="q43" value="2">2
+<input type="radio" name="q43" value="3">3
+<input type="radio" name="q43" value="4">4</p>
+<p>Q44: Hospital Management ensures the availability of the necessary resources, space and equipment to implement health promotion activities.
+    <input type="radio" name="q44" value="1">1
+<input type="radio" name="q44" value="2">2
+<input type="radio" name="q44" value="3">3
+<input type="radio" name="q44" value="4">4</p>
+
+ <p>Q45: Hospital Management ensures that health professionals, in partnership with patients, systematically assess needs for health promotion activities.
+     <input type="radio" name="q45" value="1">1
+<input type="radio" name="q45" value="2">2
+<input type="radio" name="q45" value="3">3
+<input type="radio" name="q45" value="4">4</p>
+<p>Q46: Hospital Management provide Guidelines on how to identify smoking status, alcohol consumption, nutritional status, psycho-social-economic status.
+<input type="radio" name="q46" value="1">1
+<input type="radio" name="q46" value="2">2
+<input type="radio" name="q46" value="3">3
+<input type="radio" name="q46" value="4">4</p>
+<p>Q47: Hospital Management review Health Promotion Guidelines and Procedures annually. 
+<input type="radio" name="q47" value="1">1
+<input type="radio" name="q47" value="2">2
+<input type="radio" name="q47" value="3">3
+<input type="radio" name="q47" value="4">4</p>
+<p>Q48: Hospital Management provide Health Promotion Guidelines and Procedures for diagnosis-related patient-groups like  asthma patients, diabetes patients, chronic obstructive pulmonary disease, surgery, rehabilitation. 
+<input type="radio" name="q48" value="1">1
+<input type="radio" name="q48" value="2">2
+<input type="radio" name="q48" value="3">3
+<input type="radio" name="q48" value="4">4</p>
+<p>Q49: Hospital Management ensures that assessment of a patient's need for health promotion is done at first contact with the hospital. 
+<input type="radio" name="q49" value="1">1
+<input type="radio" name="q49" value="2">2
+<input type="radio" name="q49" value="3">3
+<input type="radio" name="q49" value="4">4</p>
+<p>Q50: Hospital Clinicians review and adjust Patient's need as necessary according to changes in the Patient's clinical condition or on request. 
+<input type="radio" name="q50" value="1">1
+<input type="radio" name="q50" value="2">2
+<input type="radio" name="q50" value="3">3
+<input type="radio" name="q50" value="4">4</p>
+
+  </div>
+</form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#qmpage4" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage6" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum5">Next</a>
+        <script>function sumf5() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum5').on('click', function() {
+    alert(sumf5());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="qmpage6"class="qm">
+  <div data-role="header">
+    <h2><b>Quality Management</b></h2> 
+  </div>
+<form name="qm6">
+  <div data-role="main" class="ui-content">
+  
+
+<p>Q51: Patient's Health Promotion assessment and the date are documented in the patients record at admission.
+    <input type="radio" name="q51" value="1">1
+<input type="radio" name="q51" value="2">2
+<input type="radio" name="q51" value="3">3
+<input type="radio" name="q51" value="4">4</p>
+
+<p>Q52: Hospital Management collaborates with other Hospitals and Service Providers on an ongoing basis to ensure that Health Promotion is integrated in patient pathways.
+<input type="radio" name="q52" value="1">1
+<input type="radio" name="q52" value="2">2
+<input type="radio" name="q52" value="3">3
+<input type="radio" name="q52" value="4">4</p>
+<p>Q53: Hospital Management ensure Continuity of Care including Patient hand-offs is clearly defined in a flow that is understood by all internal and external Stakeholders. 
+<input type="radio" name="q53" value="1">1
+<input type="radio" name="q53" value="2">2
+<input type="radio" name="q53" value="3">3
+<input type="radio" name="q53" value="4">4</p>
+<p>Q54: Hospital Management ensures Patient Confidentiality in exchanging information with other health care organizations
+<input type="radio" name="q54" value="1">1
+<input type="radio" name="q54" value="2">2
+<input type="radio" name="q54" value="3">3
+<input type="radio" name="q54" value="4">4</p>
+
+<p>Q55: Hospital Management support evaluation of Health Promotion services and materials with funds and staff resources. 
+<input type="radio" name="q55" value="1">1
+<input type="radio" name="q55" value="2">2
+<input type="radio" name="q55" value="3">3
+<input type="radio" name="q55" value="4">4</p>
+<p>Q56: Hospital Management identifies personnel and responsibilities for the coordination of Health Promotion Activities. 
+<input type="radio" name="q56" value="1">1
+<input type="radio" name="q56" value="2">2
+<input type="radio" name="q56" value="3">3
+<input type="radio" name="q56" value="4">4</p>
+
+ <p>Q57: Hospital Unit Staff routinely capture and evaluate Data on Health Promotion interventions. 
+<input type="radio" name="q57" value="1">1
+<input type="radio" name="q57" value="2">2
+<input type="radio" name="q57" value="3">3
+<input type="radio" name="q57" value="4">4</p>
+<p>Q58: Hospital Management audits implementation of the Health Promotion policy in each department.
+<input type="radio" name="q58" value="1">1
+<input type="radio" name="q58" value="2">2
+<input type="radio" name="q58" value="3">3
+<input type="radio" name="q58" value="4">4</p>
+
+  <p>Q59: Hospital Management ensure staff have relevant competences to perform Health Promotion activities.
+<input type="radio" name="q59" value="1">1
+<input type="radio" name="q59" value="2">2
+<input type="radio" name="q59" value="3">3
+<input type="radio" name="q59" value="4">4</p>
+<p>Q60: Hospital Management includes Health Promotion in the Continuing professional development program of the Hospital. 
+<input type="radio" name="q60" value="1">1
+<input type="radio" name="q60" value="2">2
+<input type="radio" name="q60" value="3">3
+<input type="radio" name="q60" value="4">4</p>
+
+
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#qmpage5" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage7" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum6">Next</a>
+          <script>function sumf6() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum6').on('click', function() {
+    alert(sumf6());
+});</script>     
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="hlmpg7"class="qm">
+  <div data-role="header">
+    
+  </div>
+<form name="qm7">
+  <div data-role="main" class="ui-content">
+  
+<p>Q61: Hospital Management ensures Patients' needs assessment include awareness of and sensitivity to social and cultural background.
+<input type="radio" name="q61" value="1">1
+<input type="radio" name="q61" value="2">2
+<input type="radio" name="q61" value="3">3
+<input type="radio" name="q61" value="4">4</p>
+<p>Q62: Hospital Unit Staff use Information provided by other health service partners in the identification of Patient Needs. 
+<input type="radio" name="q62" value="1">1
+<input type="radio" name="q62" value="2">2
+<input type="radio" name="q62" value="3">3
+<input type="radio" name="q62" value="4">4</p>
+<p>Q63: Hospital Unit Staff ensure Information from referring physician or other relevant sources is available in the Patient Record.
+ <input type="radio" name="q63" value="1">1
+<input type="radio" name="q63" value="2">2
+<input type="radio" name="q63" value="3">3
+<input type="radio" name="q63" value="4">4</p>
+
+<p>Q64: Hospital Unit Staff provide Patients with information on significant factors concerning their disease or health condition. 
+<input type="radio" name="q64" value="1">1
+<input type="radio" name="q64" value="2">2
+<input type="radio" name="q64" value="3">3
+<input type="radio" name="q64" value="4">4</p>
+<p>Q65: Hospital Unit Staff inform Patients about planned activities, to foster active partnership of Patient and facilitate integration of health promotion activities in all patient pathways. 
+ <input type="radio" name="q65" value="1">1
+<input type="radio" name="q65" value="2">2
+<input type="radio" name="q65" value="3">3
+<input type="radio" name="q65" value="4">4</p>
+<p>Q66: Hospital Unit Staff inform Patients of factors impacting on their health and agree Health Promotion activities with the patient. 
+<input type="radio" name="q66" value="1">1
+<input type="radio" name="q66" value="2">2
+<input type="radio" name="q66" value="3">3
+<input type="radio" name="q66" value="4">4</p>
+<p>Q67: Hospital Unit Staff give Patients clear, understandable and appropriate information about their actual condition, treatment, care and factors influencing their health. 
+<input type="radio" name="q67" value="1">1
+<input type="radio" name="q67" value="2">2
+<input type="radio" name="q67" value="3">3
+<input type="radio" name="q67" value="4">4</p>
+<p>Q68: Hospital Unit Staff record Information given to Patients in the Patients Record. 
+<input type="radio" name="q68" value="1">1
+<input type="radio" name="q68" value="2">2
+<input type="radio" name="q68" value="3">3
+<input type="radio" name="q68" value="4">4</p>
+<p>Q69: Hospital Unit Staff assess Patient satisfaction with information given and the results are used to improve the Quality Management Program. 
+<input type="radio" name="q69" value="1">1
+<input type="radio" name="q69" value="2">2
+<input type="radio" name="q69" value="3">3
+<input type="radio" name="q69" value="4">4</p>
+
+<p>Q70: Hospital Management ensures that health promotion is systematically offered to all patients based on assessed needs.
+ <input type="radio" name="q70" value="1">1
+<input type="radio" name="q70" value="2">2
+<input type="radio" name="q70" value="3">3
+<input type="radio" name="q70" value="4">4</p>
+  </div>
+</form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#qmpage6" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage8" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum7">Next</a>
+         <script>function sumf7() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum7').on('click', function() {
+    alert(sumf7());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="qmpage8"class="qm">
+  <div data-role="header">
+    <h3><b>Patient Transitions and Family Caregivers</b></h3> 
+  </div>
+    <form name="qm8">
+
+  <div data-role="main" class="ui-content">
+   
+<p>Q71: Hospital Unit staff provides information about the patient’s diagnosis and treatment plan to the family caregiver on Patient Admission.
+<input type="radio" name="q71" value="1">1
+<input type="radio" name="q71" value="2">2
+<input type="radio" name="q71" value="3">3
+<input type="radio" name="q71" value="4">4</p>
+
+<p>Q72: Hospital Management provides the family caregiver a number to call 24 hours, 7 days a week to get information on the patient’s condition  on Admission. 
+<input type="radio" name="q72" value="1">1
+<input type="radio" name="q72" value="2">2
+<input type="radio" name="q72" value="3">3
+<input type="radio" name="q72" value="4">4</p>
+
+<p>Q73: Hospital Unit Staff explains role of the designated family member including why one person is needed, what is expected, and implications for other family members.
+<input type="radio" name="q73" value="1">1
+<input type="radio" name="q73" value="2">2
+<input type="radio" name="q73" value="3">3
+<input type="radio" name="q73" value="4">4</p>
+<p>Q74: Hospital Management has a privacy statement that empowers Healthcare staff to provide medical information to designated family members, unless the patient objects.
+<input type="radio" name="q74" value="1">1
+<input type="radio" name="q74" value="2">2
+<input type="radio" name="q74" value="3">3
+<input type="radio" name="q74" value="4">4</p>
+<p>Q75: Hospital Unit Staff provides information about services and resources available to the family caregiver during the patient’s hospitalization like family meetings, overnight stays, etc. 
+<input type="radio" name="q75" value="1">1
+<input type="radio" name="q75" value="2">2
+<input type="radio" name="q75" value="3">3
+<input type="radio" name="q75" value="4">4</p>
+<p>Q76: Hospital Unit Staff provides family caregivers an estimate of the patient’s length of stay within the first few days of a patient’s admission. 
+<input type="radio" name="q76" value="1">1
+<input type="radio" name="q76" value="2">2
+<input type="radio" name="q76" value="3">3
+<input type="radio" name="q76" value="4">4</p>
+<p>Q77: Hospital staff routinely assesses the ability and willingness of family caregivers to assist in the care of patients after discharge. 
+<input type="radio" name="q77" value="1">1
+<input type="radio" name="q77" value="2">2
+<input type="radio" name="q77" value="3">3
+<input type="radio" name="q77" value="4">4</p>
+<p>Q78: Hospital Management ensures Hospital Unit staff pay attention to family caregivers’ needs, including services, support, and information they receive.
+  <input type="radio" name="q78" value="1">1
+<input type="radio" name="q78" value="2">2
+<input type="radio" name="q78" value="3">3
+<input type="radio" name="q78" value="4">4</p>
+<p>Q79: Hospital Quality Manager evaluates family caregivers’ experiences and uses that information to improve quality.
+<input type="radio" name="q79" value="1">1
+<input type="radio" name="q79" value="2">2
+<input type="radio" name="q79" value="3">3
+<input type="radio" name="q79" value="4">4</p>
+
+<p>Q80: Hospital Management ensures Hospital Unit Staff give Family Caregivers timely, understandable information about the patient’s condition and prognosis.
+ <input type="radio" name="q80" value="1">1
+<input type="radio" name="q80" value="2">2
+<input type="radio" name="q80" value="3">3
+<input type="radio" name="q80" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#qmpage7" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage9" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum8">Next</a>
+           <script>function sumf8() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum8').on('click', function() {
+    alert(sumf8());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+
+<div data-role="page" id="qmpage9"class="qm">
+  <div data-role="header">
+    <h3><b>Patient Transitions and Family Caregivers</b></h3> 
+  </div>
+    <form name="qm9">
+
+  <div data-role="main" class="ui-content">
+   
+<p>Q81: Hospital Unit Staff ensure Family Caregivers are actively involved in decision making.
+<input type="radio" name="q81" value="1">1
+<input type="radio" name="q81" value="2">2
+<input type="radio" name="q81" value="3">3
+<input type="radio" name="q81" value="4">4</p>
+
+<p>Q82: Hospital Unit Staff use professional interpreters (Language Line, staff who speak the language), when communicating with Family Caregivers, as needed. 
+<input type="radio" name="q82" value="1">1
+<input type="radio" name="q82" value="2">2
+<input type="radio" name="q82" value="3">3
+<input type="radio" name="q82" value="4">4</p>
+
+<p>Q83: Hospital Unit staff train family caregivers to accurately administer medications, observe and report symptoms and side effects of medication.
+<input type="radio" name="q83" value="1">1
+<input type="radio" name="q83" value="2">2
+<input type="radio" name="q83" value="3">3
+<input type="radio" name="q83" value="4">4</p>
+<p>Q84: Hospital Management ensures that all patients, staff and visitors have access to general information on factors influencing health.
+<input type="radio" name="q84" value="1">1
+<input type="radio" name="q84" value="2">2
+<input type="radio" name="q84" value="3">3
+<input type="radio" name="q84" value="4">4</p>
+<p>Q85: Hospital Management identify and cooperate with existing health and social care providers and related organizations and groups in the community.
+<input type="radio" name="q85" value="1">1
+<input type="radio" name="q85" value="2">2
+<input type="radio" name="q85" value="3">3
+<input type="radio" name="q85" value="4">4</p>
+<p>Q86: Hospital Management in collaboration with Care Partners provide seamless services to the patient including admission criteria and Discharge plan. 
+<input type="radio" name="q86" value="1">1
+<input type="radio" name="q86" value="2">2
+<input type="radio" name="q86" value="3">3
+<input type="radio" name="q86" value="4">4</p>
+<p>Q87: Hospital Unit Staff give Patients and their designated Caregivers understandable follow-up instructions at referral or discharge. 
+<input type="radio" name="q87" value="1">1
+<input type="radio" name="q87" value="2">2
+<input type="radio" name="q87" value="3">3
+<input type="radio" name="q87" value="4">4</p>
+<p>Q88: Hospital Management jointly review timeliness and appropriateness in Discharge procedure and information exchange practices between Partner Organizations.
+  <input type="radio" name="q88" value="1">1
+<input type="radio" name="q88" value="2">2
+<input type="radio" name="q88" value="3">3
+<input type="radio" name="q88" value="4">4</p>
+<p>Q89: Hospital Unit staff recognize the importance of the family caregiver to the patient’s care and wellbeing on Admission
+<input type="radio" name="q89" value="1">1
+<input type="radio" name="q89" value="2">2
+<input type="radio" name="q89" value="3">3
+<input type="radio" name="q89" value="4">4</p>
+
+<p>Q90: Hospital Unit staff provides information about the Hospital Policy on payment within the first few days of a patient’s admission.
+ <input type="radio" name="q90" value="1">1
+<input type="radio" name="q90" value="2">2
+<input type="radio" name="q90" value="3">3
+<input type="radio" name="q90" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#qmpage8" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#qmpage10" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum9">Next</a>
+           <script>function sumf9() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum9').on('click', function() {
+    alert(sumf9());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        
+        <div data-role="page" id="qmpage10"class="qm">
+  <div data-role="header">
+    <h3><b>Patient Transitions and Family Caregivers</b></h3> 
+  </div>
+    <form name="qm10">
+
+  <div data-role="main" class="ui-content">
+   
+<p>Q91: Hospital Unit staff train family caregivers to recognize if the patient’s condition begins to worsen.
+<input type="radio" name="q91" value="1">1
+<input type="radio" name="q91" value="2">2
+<input type="radio" name="q91" value="3">3
+<input type="radio" name="q91" value="4">4</p>
+
+<p>Q92:  Hospital Unit Staff train family caregivers to monitor and operate medical equipment, if needed.
+<input type="radio" name="q92" value="1">1
+<input type="radio" name="q92" value="2">2
+<input type="radio" name="q92" value="3">3
+<input type="radio" name="q92" value="4">4</p>
+
+<p>Q93: Hospital Unit staff train family caregivers to manage diet and activity of Patient.
+<input type="radio" name="q93" value="1">1
+<input type="radio" name="q93" value="2">2
+<input type="radio" name="q93" value="3">3
+<input type="radio" name="q93" value="4">4</p>
+
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#qmpage9" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum10">Next</a>
+           <script>function sumf8() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum10').on('click', function() {
+    alert(sumf10());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+    </body>
+</html>
+
+
+
+ 

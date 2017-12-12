@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Care Process Management 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+      
+       
+
+    </head>
+    <body>
+         
+        <div data-role="page" id="cpmpage1" class="cpm">
+  <div data-role="header" style="text-align:left;"data-type="honrizontal">
+    <h2><b>Care Process Management 2</b></h2> 
+    <a href="hqmhtml.html" class="ui-btn ui-corner-all ui-shadow ui-icon-home">Home</a>
+     
+  </div>
+          
+  <div data-role="main" class="ui-content">
+    
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <form name="2cpm1">
+    <p>Q1: Hospital Management develop suitable Performance Indicators to review the effectiveness of Treatment and Care Processes.
+<input type="radio" name="q1" value="1">1
+<input type="radio" name="q1" value="2">2
+<input type="radio" name="q1" value="3">3
+<input type="radio" name="q1" value="4">4</p>
+
+ <p>Q2: Hospital Management motivates Unit members to perform agreed measurements consistently.
+<input type="radio" name="q2" value="1">1
+<input type="radio" name="q2" value="2">2
+<input type="radio" name="q2" value="3">3
+<input type="radio" name="q2" value="4">4</p>
+<p>Q3: Hospital Management ensure newly implemented Treatment and Care Processes are measured, recorded and reported to observe shortcomings in Care Processes. 
+<input type="radio" name="q3" value="1">1
+<input type="radio" name="q3" value="2">2
+<input type="radio" name="q3" value="3">3
+<input type="radio" name="q3" value="4">4</p>
+<p>Q4: Hospital Management monitor previously selected critical process components in the implementation of new techniques, materials, instruments and equipment.
+<input type="radio" name="q4" value="1">1
+<input type="radio" name="q4" value="2">2
+<input type="radio" name="q4" value="3">3
+<input type="radio" name="q4" value="4">4</p>
+
+ <p>Q5: Hospital Management develop Measurable process goals to objectively evaluate improvements in Treatment and Care Processes.
+<input type="radio" name="q5" value="1">1
+<input type="radio" name="q5" value="2">2
+<input type="radio" name="q5" value="3">3
+<input type="radio" name="q5" value="4">4</p>
+<p>Q6: Hospital Management compare Improvement results of Care Processes with already determined goals with one or more validated indicators.
+<input type="radio" name="q6" value="1">1
+<input type="radio" name="q6" value="2">2
+<input type="radio" name="q6" value="3">3
+<input type="radio" name="q6" value="4">4</p>
+<p>Q7: The Hospital has Procedures for analyzing, standardization and development of Treatment and Care Protocols.
+<input type="radio" name="q7" value="1">1
+<input type="radio" name="q7" value="2">2
+<input type="radio" name="q7" value="3">3
+<input type="radio" name="q7" value="4">4</p>
+<p>Q8:  Hospital Management involve Healthcare Professionals that are daily involved in Treatment and Care Processes in improvement of such Treatment or Care Process.
+<input type="radio" name="q8" value="1">1
+<input type="radio" name="q8" value="2">2
+<input type="radio" name="q8" value="3">3
+<input type="radio" name="q8" value="4">4</p>
+<p>Q9:  Hospital Management evaluate and correct Safety Risks before making technical, procedural and organizational Changes in Treatment and Care Processes.
+<input type="radio" name="q9" value="1">1
+<input type="radio" name="q9" value="2">2
+<input type="radio" name="q9" value="3">3
+<input type="radio" name="q9" value="4">4</p>
+<p>Q10: Hospital Management has developed Procedures for Treatment and Care of special groups like Children, the Elderly and Patients that are unable to give consent and make decisions
+<input type="radio" name="q10" value="1">1
+<input type="radio" name="q10" value="2">2
+<input type="radio" name="q10" value="3">3
+<input type="radio" name="q10" value="4">4</p>
+
+
+      </form>
+
+
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         
+         <a href="#hqmpage" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage2" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="show_sum1">Next</a>
+         <script>function sumf1() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum1').on('click', function() {
+    alert(sumf1());
+    if (window.localStorage) {
+                localStorage.setItem("f1", "sumf1()"); 
+		alert("The data has been stored successfully.");
+	}
+            
+   
+});</script> 
+         
+         <h5>&copy; bestratedhospitals.org</h5>
+  </div>
+
+  </div>
+</div> 
+
+<div data-role="page" id="cpmpage2"class="cpm">
+  <div data-role="header">
+  <h2><b>Care Process Management</b></h2> 
+  </div>
+<form name="2cpm2">
+  <div data-role="main" class="ui-content">
+    
+   
+   <p>Q11: Hospital Management ensure Patients involved in Medical Research are thoroughly informed and explicitly agree to participate in such research. 
+    <input type="radio" name="q11" value="1">1
+<input type="radio" name="q11" value="2">2
+<input type="radio" name="q11" value="3">3
+<input type="radio" name="q11" value="4">4</p>
+
+<p>Q12: Hospital Management inform Patient about the Doctor or Specialist responsible for the individual care process and the contact person for the Patient.
+<input type="radio" name="q12" value="1">1
+<input type="radio" name="q12" value="2">2
+<input type="radio" name="q12" value="3">3
+<input type="radio" name="q12" value="4">4</p>
+<p>Q13: Hospital Management inform Patients and obtain permission if students or co-assistants are going to be involved in Care Process. 
+ <input type="radio" name="q13" value="1">1
+<input type="radio" name="q13" value="2">2
+<input type="radio" name="q13" value="3">3
+<input type="radio" name="q13" value="4">4</p>
+<h3>Developing Operational Procedures</h3>
+<p>Q14: Hospital Management supports joint formulation of operating procedures by Health Professionals working in different Units like operating theatres, interventional Care Units and Clinical Units. 
+<input type="radio" name="q14" value="1">1
+<input type="radio" name="q14" value="2">2
+<input type="radio" name="q14" value="3">3
+<input type="radio" name="q14" value="4">4</p>
+
+<p>Q15: Hospital Management ensures that Pre-, peri- and post-intervention care is organised jointly by the Healthcare Professionals, anaesthetists, and managerial staff of concerned Units.
+<input type="radio" name="q15" value="1">1
+<input type="radio" name="q15" value="2">2
+<input type="radio" name="q15" value="3">3
+<input type="radio" name="q15" value="4">4</p>
+<p>Q16: Healthcare Professionals transmit information in writing at each stage to ensure continuity of the patient's pre-, peri- and post-intervention care. 
+<input type="radio" name="q16" value="1">1
+<input type="radio" name="q16" value="2">2
+<input type="radio" name="q16" value="3">3
+<input type="radio" name="q16" value="4">4</p>
+<h3>Pharmacy</h3>
+ <p>Q17: Pharmacy Staff and the Clinical Units Staff work together in formulating their operational procedures 
+ <input type="radio" name="q17" value="1">1
+<input type="radio" name="q17" value="2">2
+<input type="radio" name="q17" value="3">3
+<input type="radio" name="q17" value="4">4</p>
+<p>Q18: Hospital Pharmacy has Guidelines for prescription, validation of prescriptions, distribution and supply of medications to the Clinical Units.
+<input type="radio" name="q18" value="1">1
+<input type="radio" name="q18" value="2">2
+<input type="radio" name="q18" value="3">3
+<input type="radio" name="q18" value="4">4</p>
+ 
+  <p>Q19: Hospital Pharmacy has Guidelines for prescription, validation of prescriptions, distribution and supply of medical devices to the Clinical Units. 
+ <input type="radio" name="q19" value="1">1
+<input type="radio" name="q19" value="2">2
+<input type="radio" name="q19" value="3">3
+<input type="radio" name="q19" value="4">4</p>
+<p>Q20: Hospital Pharmacy provides Conditions of use for medications and medical devices for Users. 
+<input type="radio" name="q20" value="1">1
+<input type="radio" name="q20" value="2">2
+<input type="radio" name="q20" value="3">3
+<input type="radio" name="q20" value="4">4</p>
+  </div>
+  </form>
+
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+             <a href="#cpmpage1" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage3" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum2">Next</a>
+           <script>function sumf2() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum2').on('click', function() {
+    alert(sumf2());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="cpmpage3"class="cpm">
+  <div data-role="header">
+    <h2><b>Care Process Management 2</b></h2> 
+  </div>
+<form name="2cpm3">
+  <div data-role="main" class="ui-content">
+ <p>Q21: Hospital Management and concerned Professionals analyze the use of Medications and medical devices. 
+<input type="radio" name="q21" value="1">1
+<input type="radio" name="q21" value="2">2
+<input type="radio" name="q21" value="3">3
+<input type="radio" name="q21" value="4">4</p>
+ <h3>Laboratory</h3>
+<p>Q22: Laboratory Staff and the Clinical Units Staff work together in formulating their operational procedures.
+<input type="radio" name="q22" value="1">1
+<input type="radio" name="q22" value="2">2
+<input type="radio" name="q22" value="3">3
+<input type="radio" name="q22" value="4">4</p>
+<p>Q23: Hospital has Guidelines for conditions under which tests are prescribed, samples taken, and test results distributed and notified. 
+<input type="radio" name="q23" value="1">1
+<input type="radio" name="q23" value="2">2
+<input type="radio" name="q23" value="3">3
+<input type="radio" name="q23" value="4">4</p>
+
+<p>Q24: Clinical Units include the Purpose and necessary  clinical information in Requests for Tests 
+<input type="radio" name="q24" value="1">1
+<input type="radio" name="q24" value="2">2
+<input type="radio" name="q24" value="3">3
+<input type="radio" name="q24" value="4">4</p>
+<p>Q25: Hospital Management evaluate if Test Results satisfy the requirements of the Clinical Units in terms of quality and timeframes for sending results. 
+<input type="radio" name="q25" value="1">1
+<input type="radio" name="q25" value="2">2
+<input type="radio" name="q25" value="3">3
+<input type="radio" name="q25" value="4">4</p>
+<p>Q26: Hospital Management and concerned Professionals analyze use of laboratory tests. 
+<input type="radio" name="q26" value="1">1
+<input type="radio" name="q26" value="2">2
+<input type="radio" name="q26" value="3">3
+<input type="radio" name="q26" value="4">4</p>
+<h3>Medical Imaging</h3>
+<p>Q27: Health professionals in the medical imaging or functional investigation sectors and the Clinical Units work together in formulating their operational procedures. 
+<input type="radio" name="q27" value="1">1
+<input type="radio" name="q27" value="2">2
+<input type="radio" name="q27" value="3">3
+<input type="radio" name="q27" value="4">4</p>
+<p>Q28: Hospital Management has developed Guidelines for conditions under which tests are requested and carried out, and the results notified.    
+ <input type="radio" name="q28" value="1">1
+<input type="radio" name="q28" value="2">2
+<input type="radio" name="q28" value="3">3
+<input type="radio" name="q28" value="4">4</p>
+<p>Q29: Orders for imaging or functional investigations contain necessary clinical information and the purpose of the request. 
+<input type="radio" name="q29" value="1">1
+<input type="radio" name="q29" value="2">2
+<input type="radio" name="q29" value="3">3
+<input type="radio" name="q29" value="4">4</p>
+<p>Q30: Health Professionals evaluate if Test results satisfy the requirements of the Clinical Units in terms of quality and timeframes for sending results. 
+ <input type="radio" name="q30" value="1">1
+<input type="radio" name="q30" value="2">2
+<input type="radio" name="q30" value="3">3
+<input type="radio" name="q30" value="4">4</p>
+
+    
+  </div>
+</form>
+
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+          <a href="#cpmpage2" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage4" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum3">Next</a>
+       <script>function sumf3() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum3').on('click', function() {
+    alert(sumf3());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="cpmpage4"class="cpm">
+  <div data-role="header">
+    
+  </div>
+<form name="2cpm4">
+  <div data-role="main" class="ui-content">
+   <p>Q31: Hospital Management and concerned Professionals analyze the use of imaging and functional investigations. 
+<input type="radio" name="q31" value="1">1
+<input type="radio" name="q31" value="2">2
+<input type="radio" name="q31" value="3">3
+<input type="radio" name="q31" value="4">4</p>
+<h3>Admission</h3>
+<p>Q32: Hospital Staff give Patients practical information about their stay in hospital including visiting hours and their responsibilities to living in a community, like prevention of noise nuisance, and restrictions on smoking in a hospital environment.
+<input type="radio" name="q32" value="1">1
+<input type="radio" name="q32" value="2">2
+<input type="radio" name="q32" value="3">3
+<input type="radio" name="q32" value="4">4</p>
+
+<p>Q33: Hospital Management ensures patient's privacy, personal dignity, and liberty are respected throughout their admission or consultation. 
+<input type="radio" name="q33" value="1">1
+<input type="radio" name="q33" value="2">2
+<input type="radio" name="q33" value="3">3
+<input type="radio" name="q33" value="4">4</p>
+<p>Q34: Hospital Management ensures Patients are examined in conditions of privacy which are conducive to a personal discussion and given opportunity to have their questions answered. 
+<input type="radio" name="q34" value="1">1
+<input type="radio" name="q34" value="2">2
+<input type="radio" name="q34" value="3">3
+<input type="radio" name="q34" value="4">4</p>
+<p>Q35: Hospital Management ensure Patients can keep their personal effects with them throughout their stay in hospital, unless this is not possible for safety reasons. 
+<input type="radio" name="q35" value="1">1
+<input type="radio" name="q35" value="2">2
+<input type="radio" name="q35" value="3">3
+<input type="radio" name="q35" value="4">4</p>
+<p>Q36: Hospital provide safe storage for patients to store their personal effects and retrieve as needed. 
+<input type="radio" name="q36" value="1">1
+<input type="radio" name="q36" value="2">2
+<input type="radio" name="q36" value="3">3
+<input type="radio" name="q36" value="4">4</p>
+<p>Q37: Hospital Management ensure Patient's privacy is respected during Care and Cleaning. 
+<input type="radio" name="q37" value="1">1
+<input type="radio" name="q37" value="2">2
+<input type="radio" name="q37" value="3">3
+<input type="radio" name="q37" value="4">4</p>
+<p>Q38: Hospital Management and Healthcare Professionals obtain Patient's consent to allow students to be present during consultations.
+<input type="radio" name="q38" value="1">1
+<input type="radio" name="q38" value="2">2
+<input type="radio" name="q38" value="3">3
+<input type="radio" name="q38" value="4">4</p>
+<p>Q39: Hospital ensure Patients' religious beliefs are respected and Patients are informed that they may ask to see a minister of the religion of their choice. 
+<input type="radio" name="q39" value="1">1
+<input type="radio" name="q39" value="2">2
+<input type="radio" name="q39" value="3">3
+<input type="radio" name="q39" value="4">4</p>
+<p>Q40: Hospital Management ensure Patient's right to go where he or she wishes is respected, except for reasons of safety or if this would contravene regulations. 
+<input type="radio" name="q40" value="1">1
+<input type="radio" name="q40" value="2">2
+<input type="radio" name="q40" value="3">3
+<input type="radio" name="q40" value="4">4</p>
+
+
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#cpmpage3" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage5" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum4">Next</a>
+           
+  <script>function sumf4() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum4').on('click', function() {
+    alert(sumf4());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="cpmpage5"class="cpm">
+  <div data-role="header">
+   
+  </div>
+<form name="2cpm5">
+  <div data-role="main" class="ui-content">
+<p>Q41: Patients may leave the Hospital at any time after they have been informed of any risks they may incur, unless this would contravene regulations like compulsory hospitalization or hospitalization at the request of a third party.
+<input type="radio" name="q41" value="1">1
+<input type="radio" name="q41" value="2">2
+<input type="radio" name="q41" value="3">3
+<input type="radio" name="q41" value="4">4</p>
+
+ <p>Q42: Hospital Management formally documents Request for a patient to leave against medical advice.
+<input type="radio" name="q42" value="1">1
+<input type="radio" name="q42" value="2">2
+<input type="radio" name="q42" value="3">3
+<input type="radio" name="q42" value="4">4</p>
+<p>Q43: Hospital Management assure Patients that all personal, medical and social information, and details of their private life are kept confidential.
+    <input type="radio" name="q43" value="1">1
+<input type="radio" name="q43" value="2">2
+<input type="radio" name="q43" value="3">3
+<input type="radio" name="q43" value="4">4</p>
+<p>Q44: Hospital has Procedures and Policy on keeping identity and medical information of Patients safe from outsiders.
+<input type="radio" name="q44" value="1">1
+<input type="radio" name="q44" value="2">2
+<input type="radio" name="q44" value="3">3
+<input type="radio" name="q44" value="4">4</p>
+
+ <p>Q45: Hospital Management assure Patients that their presence in the Hospital will not be divulged.
+<input type="radio" name="q45" value="1">1
+<input type="radio" name="q45" value="2">2
+<input type="radio" name="q45" value="3">3
+<input type="radio" name="q45" value="4">4</p>
+<p>Q46: Hospital Management has a structured Information Transfer System of between Healthcare staff and Working Units involved in same Care Process.
+<input type="radio" name="q46" value="1">1
+<input type="radio" name="q46" value="2">2
+<input type="radio" name="q46" value="3">3
+<input type="radio" name="q46" value="4">4</p>
+<p>Q47: Hospital Management has laid down procedures for providing information and interacting with the patient. 
+<input type="radio" name="q47" value="1">1
+<input type="radio" name="q47" value="2">2
+<input type="radio" name="q47" value="3">3
+<input type="radio" name="q47" value="4">4</p>
+<h3>Discharge</h3>
+<p>Q48: Hospital Management provide Patients with the information and documentation needed to ensure continuity of care at discharge. 
+<input type="radio" name="q48" value="1">1
+<input type="radio" name="q48" value="2">2
+<input type="radio" name="q48" value="3">3
+<input type="radio" name="q48" value="4">4</p>
+<p>Q49: Hospital inform Patient's referring doctor before Patient Discharge, if the Patient's condition requires specific follow-up. 
+<input type="radio" name="q49" value="1">1
+<input type="radio" name="q49" value="2">2
+<input type="radio" name="q49" value="3">3
+<input type="radio" name="q49" value="4">4</p>
+<p>Q50: Hospital Management provide information to enable Patients participate actively in their treatment after Discharge. 
+<input type="radio" name="q50" value="1">1
+<input type="radio" name="q50" value="2">2
+<input type="radio" name="q50" value="3">3
+<input type="radio" name="q50" value="4">4</p>
+
+
+   
+  </div>
+</form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#cpmpage4" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage6" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum5">Next</a>
+        <script>function sumf5() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum5').on('click', function() {
+    alert(sumf5());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="cpmpage6"class="cpm">
+  <div data-role="header">
+    <h2><b>Care Process Management</b></h2> 
+  </div>
+<form name="2cpm6">
+  <div data-role="main" class="ui-content">
+
+
+<p>Q51: Hospital Management ensure Continuity of care when patients are transferred with the receiving Hospital is given a written summary of the patient's condition and health needs, and interventions provided by the referring Hospital.
+    <input type="radio" name="q51" value="1">1
+<input type="radio" name="q51" value="2">2
+<input type="radio" name="q51" value="3">3
+<input type="radio" name="q51" value="4">4</p>
+
+<p>Q52: Hospital Management document the Rehabilitation plan in Patient Record describing role of the Hospital and other Partners.
+<input type="radio" name="q52" value="1">1
+<input type="radio" name="q52" value="2">2
+<input type="radio" name="q52" value="3">3
+<input type="radio" name="q52" value="4">4</p>
+<p>Q53: Hospital has Procedures for communication with External Partners to ensure Continuity of Care. 
+<input type="radio" name="q53" value="1">1
+<input type="radio" name="q53" value="2">2
+<input type="radio" name="q53" value="3">3
+<input type="radio" name="q53" value="4">4</p>
+<p>Q54: Hospital Unit staff give family caregivers explicit information about when to expect discharge.
+<input type="radio" name="q54" value="1">1
+<input type="radio" name="q54" value="2">2
+<input type="radio" name="q54" value="3">3
+<input type="radio" name="q54" value="4">4</p>
+
+<p>Q55: Hospital Unit staff give family caregivers adequate time to make informed decisions prior to discharge or transfer.
+<input type="radio" name="q55" value="1">1
+<input type="radio" name="q55" value="2">2
+<input type="radio" name="q55" value="3">3
+<input type="radio" name="q55" value="4">4</p>
+<p>Q56: Hospital Unit staff  family caregivers written information about the patient’s rights related to discharge, including the appeal process. 
+<input type="radio" name="q56" value="1">1
+<input type="radio" name="q56" value="2">2
+<input type="radio" name="q56" value="3">3
+<input type="radio" name="q56" value="4">4</p>
+
+ <p>Q57: Hospital Unit staff give family caregivers information about all available care options, such as home care, adult day care services, etc.  
+<input type="radio" name="q57" value="1">1
+<input type="radio" name="q57" value="2">2
+<input type="radio" name="q57" value="3">3
+<input type="radio" name="q57" value="4">4</p>
+<p>Q58: Hospital Unit staff advise family caregivers about the costs of the different care options following discharge.
+<input type="radio" name="q58" value="1">1
+<input type="radio" name="q58" value="2">2
+<input type="radio" name="q58" value="3">3
+<input type="radio" name="q58" value="4">4</p>
+
+  <p>Q59: Hospital Unit staff inform family caregivers about essential services and equipment needed at time of discharge like transportation, hospital beds, walkers, etc. and how to obtain them.
+<input type="radio" name="q59" value="1">1
+<input type="radio" name="q59" value="2">2
+<input type="radio" name="q59" value="3">3
+<input type="radio" name="q59" value="4">4</p>
+<p>Q60: Hospital Unit staff give family caregivers information about community resources available to the caregiver, such as caregiver support groups, financial assistance, respite services, etc. 
+<input type="radio" name="q60" value="1">1
+<input type="radio" name="q60" value="2">2
+<input type="radio" name="q60" value="3">3
+<input type="radio" name="q60" value="4">4</p>
+
+
+  </div>
+  </form
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#cpmpage5" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage7" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum6">Next</a>
+          <script>function sumf6() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum6').on('click', function() {
+    alert(sumf6());
+});</script>     
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="cpmpage7"class="cpm">
+  <div data-role="header">
+    <h2><b>Care Process Management</b></h2> 
+  </div>
+<form name="2cpm7">
+  <div data-role="main" class="ui-content">
+  
+<p>Q61: Unit staff inform family caregivers about the possibility of a gap between hospital discharge and the start of home care services if Patient is referred to another Hospital. 
+<input type="radio" name="q61" value="1">1
+<input type="radio" name="q61" value="2">2
+<input type="radio" name="q61" value="3">3
+<input type="radio" name="q61" value="4">4</p>
+<p>Q62: Healthcare Professionals plan Discharge as soon as Patient is admitted, and is updated throughout the hospital stay. 
+<input type="radio" name="q62" value="1">1
+<input type="radio" name="q62" value="2">2
+<input type="radio" name="q62" value="3">3
+<input type="radio" name="q62" value="4">4</p>
+<p>Q63: Hospital Unit Staff give Family Caregivers a copy of the discharge plan with clear instructions about medications, diet, activity, and symptom management. 
+ <input type="radio" name="q63" value="1">1
+<input type="radio" name="q63" value="2">2
+<input type="radio" name="q63" value="3">3
+<input type="radio" name="q63" value="4">4</p>
+
+<p>Q64: Hospital Unit Staff give Family Caregivers a telephone number of a person to contact with any questions. 
+<input type="radio" name="q64" value="1">1
+<input type="radio" name="q64" value="2">2
+<input type="radio" name="q64" value="3">3
+<input type="radio" name="q64" value="4">4</p>
+<p>Q65: Hospital Unit Staff give Family Caregivers a current list of medications, including nonprescription items like herbal supplements, with dosages and other instructions.
+ <input type="radio" name="q65" value="1">1
+<input type="radio" name="q65" value="2">2
+<input type="radio" name="q65" value="3">3
+<input type="radio" name="q65" value="4">4</p>
+<p>Q66: Hospital Unit Staff give Family Caregivers information on when to schedule initial post-discharge medical visit. 
+<input type="radio" name="q66" value="1">1
+<input type="radio" name="q66" value="2">2
+<input type="radio" name="q66" value="3">3
+<input type="radio" name="q66" value="4">4</p>
+<p>Q67: Hospital Unit Staff provide both the referral centre and the family care giver information to contact themselves for Patients being transferred to another facility
+<input type="radio" name="q67" value="1">1
+<input type="radio" name="q67" value="2">2
+<input type="radio" name="q67" value="3">3
+<input type="radio" name="q67" value="4">4</p>
+<p>Q68: Hospital Unit staff contacts family caregivers by telephone within 24 hours of Discharge to address major questions and concerns
+<input type="radio" name="q68" value="1">1
+<input type="radio" name="q68" value="2">2
+<input type="radio" name="q68" value="3">3
+<input type="radio" name="q68" value="4">4</p>
+<p>Q69: Hospital Unit staff contacts family caregivers by telephone to address major questions and concerns within two weeks after discharge 
+<input type="radio" name="q69" value="1">1
+<input type="radio" name="q69" value="2">2
+<input type="radio" name="q69" value="3">3
+<input type="radio" name="q69" value="4">4</p>
+
+
+
+  </div>
+</form>
+    
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#cpmpage6" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage8" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum7">Next</a>
+         <script>function sumf7() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum7').on('click', function() {
+    alert(sumf7());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="cpmpage8"class="cpm">
+  <div data-role="header">
+    <h2><b>Care Process Management</b></h2> 
+  </div>
+    <form name="2cpm8">
+
+  <div data-role="main" class="ui-content">
+<h3>Patient Complaint Resolution</h3>
+<p>Q70: Hospital has Complaint Resolution System focused on rectifying the cause of complaint and maintaining good relations.
+ <input type="radio" name="q70" value="1">1
+<input type="radio" name="q70" value="2">2
+<input type="radio" name="q70" value="3">3
+<input type="radio" name="q70" value="4">4</p>
+
+<p>Q71: Hospital Management encourage Patients to make suggestions and complaints to direct care providers, who should try resolve complaints immediately. 
+<input type="radio" name="q71" value="1">1
+<input type="radio" name="q71" value="2">2
+<input type="radio" name="q71" value="3">3
+<input type="radio" name="q71" value="4">4</p>
+
+<p>Q72: Hospital Management ensure that all complaints made by patients are investigated and responded to. 
+<input type="radio" name="q72" value="1">1
+<input type="radio" name="q72" value="2">2
+<input type="radio" name="q72" value="3">3
+<input type="radio" name="q72" value="4">4</p>
+
+<p>Q73: Hospital Management regularly conducts  Patient Survey on wishes, expectations and experiences of patients and family care givers. 
+<input type="radio" name="q73" value="1">1
+<input type="radio" name="q73" value="2">2
+<input type="radio" name="q73" value="3">3
+<input type="radio" name="q73" value="4">4</p>
+<p>Q74: Hospital Management ensure that the Feedback from Patient Experience surveys and Complaints is passed on in an authorised manner to the working units involved. 
+<input type="radio" name="q74" value="1">1
+<input type="radio" name="q74" value="2">2
+<input type="radio" name="q74" value="3">3
+<input type="radio" name="q74" value="4">4</p>
+<h3>Care in Exceptional Circumstances</h3>
+<p>Q75: Hospital Unit staff are familiar with the Cardiopulmonary Resuscitation Procedure and regularly practice their own role in the Procedure. 
+<input type="radio" name="q75" value="1">1
+<input type="radio" name="q75" value="2">2
+<input type="radio" name="q75" value="3">3
+<input type="radio" name="q75" value="4">4</p>
+<p>Q76: Hospital has Procedures for resuscitating Patients with apnoea or myocardial infarction taking into consideration the regulation about treatment limitation. 
+<input type="radio" name="q76" value="1">1
+<input type="radio" name="q76" value="2">2
+<input type="radio" name="q76" value="3">3
+<input type="radio" name="q76" value="4">4</p>
+<p>Q77: Hospital records Cardiopulmonary Resuscitation Procedures conducted in the Hospital and the outcomes.
+<input type="radio" name="q77" value="1">1
+<input type="radio" name="q77" value="2">2
+<input type="radio" name="q77" value="3">3
+<input type="radio" name="q77" value="4">4</p>
+<p>Q78: The Hospital has a disaster management plan for the care for the patients in the case of an internal disaster.
+  <input type="radio" name="q78" value="1">1
+<input type="radio" name="q78" value="2">2
+<input type="radio" name="q78" value="3">3
+<input type="radio" name="q78" value="4">4</p>
+<p>Q79: Hospital Unit Staff are familiar with the disaster management plan and their responsibility in it, which they practice regularly.
+<input type="radio" name="q79" value="1">1
+<input type="radio" name="q79" value="2">2
+<input type="radio" name="q79" value="3">3
+<input type="radio" name="q79" value="4">4</p>
+
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#cpmpage7" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#cpmpage9" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum8">Next</a>
+           <script>function sumf8() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum8').on('click', function() {
+    alert(sumf8());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+
+
+<div data-role="page" id="cpmpage9"class="cpm">
+  <div data-role="header">
+    
+  </div>
+    <form name="2cpm9">
+
+  <div data-role="main" class="ui-content">
+ 
+<p>Q80: Hospital has an external disaster relief operations plan for the rescue and treatment of victims of large-scale calamities in the area of care.
+ <input type="radio" name="q80" value="1">1
+<input type="radio" name="q80" value="2">2
+<input type="radio" name="q80" value="3">3
+<input type="radio" name="q80" value="4">4</p>  
+<p>Q81: Hospital cooperates with the external governmental or other bodies involved external disaster relief.
+<input type="radio" name="q81" value="1">1
+<input type="radio" name="q81" value="2">2
+<input type="radio" name="q81" value="3">3
+<input type="radio" name="q81" value="4">4</p>
+
+<p>Q82: Hospital Management contact the people who need to be told if a patient is in critical condition 
+<input type="radio" name="q82" value="1">1
+<input type="radio" name="q82" value="2">2
+<input type="radio" name="q82" value="3">3
+<input type="radio" name="q82" value="4">4</p>
+
+<p>Q83: Hospital respect the wishes and convictions of the dying person and also address their specific needs.
+<input type="radio" name="q83" value="1">1
+<input type="radio" name="q83" value="2">2
+<input type="radio" name="q83" value="3">3
+<input type="radio" name="q83" value="4">4</p>
+<p>Q84: Hospital Management provide Psychological support for family caregivers of the Patient. 
+<input type="radio" name="q84" value="1">1
+<input type="radio" name="q84" value="2">2
+<input type="radio" name="q84" value="3">3
+<input type="radio" name="q84" value="4">4</p>
+  </div>
+  </form> 
+
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#cpmpage8" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hqmpage" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum9">Next</a>
+           <script>function sumf9() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum9').on('click', function() {
+    alert(sumf9());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        
+    </body>
+</html>

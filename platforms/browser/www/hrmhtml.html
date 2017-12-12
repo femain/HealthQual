@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Human Resources Management </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+      
+       
+
+    </head>
+    <body>
+         
+        <div data-role="page" id="hrmpage" class="hrm">
+  <div data-role="header" style="text-align:left;"data-type="honrizontal">
+    <h2><b>Human Resources Management</b></h2> 
+    <a href="hqmhtml.html" class="ui-btn ui-corner-all ui-shadow ui-icon-home">Home</a>
+     
+  </div>
+          
+  <div data-role="main" class="ui-content">
+    
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <form name="hrm1">
+          <h3>Hospital Human Resource Management Plan</h3>
+    <p>Q1: Hospital Management has a Human Resource Management Plan which is consistent with the Values, Mission, Objectives and Strategy of the Hospital.
+<input type="radio" name="q1" value="1">1
+<input type="radio" name="q1" value="2">2
+<input type="radio" name="q1" value="3">3
+<input type="radio" name="q1" value="4">4</p>
+
+ <p>Q2: Human Resource Management Plan identify Roles, Skills and Relevance of each Healthcare Professional to the Hospital.
+<input type="radio" name="q2" value="1">1
+<input type="radio" name="q2" value="2">2
+<input type="radio" name="q2" value="3">3
+<input type="radio" name="q2" value="4">4</p>
+<p>Q3: Hospital Management conducts an Ongoing, regular and respectful Dialogue with Hospital Staff as part of its Human Resource Policy. 
+<input type="radio" name="q3" value="1">1
+<input type="radio" name="q3" value="2">2
+<input type="radio" name="q3" value="3">3
+<input type="radio" name="q3" value="4">4</p>
+<p>Q4: Human Resources Management Plan includes the Hospital Structure and Organogram which clearly identifies the Responsibilities of all Hospital Staff.
+<input type="radio" name="q4" value="1">1
+<input type="radio" name="q4" value="2">2
+<input type="radio" name="q4" value="3">3
+<input type="radio" name="q4" value="4">4</p>
+
+ <p>Q5: The Human Resources Plan define future Human Resources requirements regarding the Hospital Needs.
+<input type="radio" name="q5" value="1">1
+<input type="radio" name="q5" value="2">2
+<input type="radio" name="q5" value="3">3
+<input type="radio" name="q5" value="4">4</p>
+<p>Q6: Human Resource Management Plan describe personalised management processes for health professionals and framework for working conditions and social relations.
+<input type="radio" name="q6" value="1">1
+<input type="radio" name="q6" value="2">2
+<input type="radio" name="q6" value="3">3
+<input type="radio" name="q6" value="4">4</p>
+<p>Q7: Human Resource Plans address potential impact of Staff changes on the Hospital Staff Capability and Capacity Needs. 
+<input type="radio" name="q7" value="1">1
+<input type="radio" name="q7" value="2">2
+<input type="radio" name="q7" value="3">3
+<input type="radio" name="q7" value="4">4</p>
+<p>Q8: Hospital Management utilizes Tools like  Job Profiles, Coaching, Training and Individual Assessment in Human Resource Management. 
+<input type="radio" name="q8" value="1">1
+<input type="radio" name="q8" value="2">2
+<input type="radio" name="q8" value="3">3
+<input type="radio" name="q8" value="4">4</p>
+<h3>Organizing and Staffing</h3>
+<p>Q9: Hospital Management has Procedures for the acquisition and selection of Hospital staff, especially those with a fiduciary position. 
+<input type="radio" name="q9" value="1">1
+<input type="radio" name="q9" value="2">2
+<input type="radio" name="q9" value="3">3
+<input type="radio" name="q9" value="4">4</p>
+<p>Q10: Hospital Management validates necessary Certifications and Up-to-date required registration at Professional Organisations for all Hospital Unit Staff. 
+<input type="radio" name="q10" value="1">1
+<input type="radio" name="q10" value="2">2
+<input type="radio" name="q10" value="3">3
+<input type="radio" name="q10" value="4">4</p>
+
+
+      </form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         
+         <a href="#hqmpage" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage2" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="show_sum1">Next</a>
+         <script>function sumf1() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum1').on('click', function() {
+    alert(sumf1());
+    if (window.localStorage) {
+                localStorage.setItem("f1", "sumf1()"); 
+		alert("The data has been stored successfully.");
+	}
+            
+   
+});</script> 
+         
+         <h5>&copy; bestratedhospitals.org</h5>
+  </div>
+
+  </div>
+</div> 
+
+<div data-role="page" id="hrmpage2"class="hrm">
+  <div data-role="header">
+  <h2><b>Human Resources Management</b></h2> 
+  </div>
+<form name="hrm2">
+  <div data-role="main" class="ui-content">
+    
+   
+   <p>Q11: Hospital Management has Procedures for the employing temporary agency workers, work placement students and co-assistants in Care Processes. 
+    <input type="radio" name="q11" value="1">1
+<input type="radio" name="q11" value="2">2
+<input type="radio" name="q11" value="3">3
+<input type="radio" name="q11" value="4">4</p>
+
+<p>Q12: Hospital Management tracks Staff turnover rates in all Hospital Units and adjusts available human resources to changes in the Hospital.
+<input type="radio" name="q12" value="1">1
+<input type="radio" name="q12" value="2">2
+<input type="radio" name="q12" value="3">3
+<input type="radio" name="q12" value="4">4</p>
+<p>Q13: Hospital Management ensures that Up-to-date job profiles including  Responsibilities and requirements of all jobs are documented and notified. 
+ <input type="radio" name="q13" value="1">1
+<input type="radio" name="q13" value="2">2
+<input type="radio" name="q13" value="3">3
+<input type="radio" name="q13" value="4">4</p>
+<p>Q14: Hospital Management harmonises tasks, responsibilities and authorities of Management Staff, including the care professionals that participate in Management. 
+<input type="radio" name="q14" value="1">1
+<input type="radio" name="q14" value="2">2
+<input type="radio" name="q14" value="3">3
+<input type="radio" name="q14" value="4">4</p>
+
+<p>Q15: Hospital Management delineate Tasks and Responsibilities between the primary Doctors and Supervising Doctors or Specialists.
+<input type="radio" name="q15" value="1">1
+<input type="radio" name="q15" value="2">2
+<input type="radio" name="q15" value="3">3
+<input type="radio" name="q15" value="4">4</p>
+<p>Q16: Hospital Management delineate Tasks, Responsibilities and Authorities between various professional disciplines involved in same Care Process. 
+<input type="radio" name="q16" value="1">1
+<input type="radio" name="q16" value="2">2
+<input type="radio" name="q16" value="3">3
+<input type="radio" name="q16" value="4">4</p>
+
+ <p>Q17: Hospital Management identifies the Healthcare Professional with final responsibility for Patient Care related to  other care providers, consultants and doctors. 
+ <input type="radio" name="q17" value="1">1
+<input type="radio" name="q17" value="2">2
+<input type="radio" name="q17" value="3">3
+<input type="radio" name="q17" value="4">4</p>
+<p>Q18: Hospital Management ensures Staff competencies and qualifications match job position and expertise needed for the concerned working unit.
+<input type="radio" name="q18" value="1">1
+<input type="radio" name="q18" value="2">2
+<input type="radio" name="q18" value="3">3
+<input type="radio" name="q18" value="4">4</p>
+ 
+  <p>Q19: Hospital Management consults periodically with Healthcare Professionals to share their views and experiences of Work Challenges and proffer solutions to address the challenges. 
+ <input type="radio" name="q19" value="1">1
+<input type="radio" name="q19" value="2">2
+<input type="radio" name="q19" value="3">3
+<input type="radio" name="q19" value="4">4</p>
+<p>Q20: Hospital Management assesses Staff Engagement levels to identify opportunities for improvement in both Staff engagement and Healthcare Outcomes 
+<input type="radio" name="q20" value="1">1
+<input type="radio" name="q20" value="2">2
+<input type="radio" name="q20" value="3">3
+<input type="radio" name="q20" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+             <a href="#hrmpage" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage3" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum2">Next</a>
+           <script>function sumf2() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum2').on('click', function() {
+    alert(sumf2());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="hrmpage3"class="hrm">
+  <div data-role="header">
+    <h2><b>Human Resources Management</b></h2> 
+  </div>
+<form name="hrm3">
+  <div data-role="main" class="ui-content">
+      <p>Q21: Hospital Management considers missions, types of activity, technologies used and staff demographics in planning for changes in the Hospital. 
+<input type="radio" name="q21" value="1">1
+<input type="radio" name="q21" value="2">2
+<input type="radio" name="q21" value="3">3
+<input type="radio" name="q21" value="4">4</p>
+<p>Q22: Hospital Management considers job profile and applicant’s qualifications before staff recruitment. 
+<input type="radio" name="q22" value="1">1
+<input type="radio" name="q22" value="2">2
+<input type="radio" name="q22" value="3">3
+<input type="radio" name="q22" value="4">4</p>
+<p>Q23: Hospital Management verifies relevant qualifications of all applicants in the Hospital during Recruitment. 
+<input type="radio" name="q23" value="1">1
+<input type="radio" name="q23" value="2">2
+<input type="radio" name="q23" value="3">3
+<input type="radio" name="q23" value="4">4</p>
+
+<p>Q24: The Hospital Medical Committee contribute to the Selection and Recruitment of Doctors. 
+<input type="radio" name="q24" value="1">1
+<input type="radio" name="q24" value="2">2
+<input type="radio" name="q24" value="3">3
+<input type="radio" name="q24" value="4">4</p>
+<p>Q25: The Medical Committee contribute to the implementation of a continuing medical education program for Healthcare Professionals. 
+<input type="radio" name="q25" value="1">1
+<input type="radio" name="q25" value="2">2
+<input type="radio" name="q25" value="3">3
+<input type="radio" name="q25" value="4">4</p>
+<p>Q26: The Medical Committee contribute to the organisation of duty and on-call rotas to ensure constant coverage of Hospital in terms of skills and expertise 
+<input type="radio" name="q26" value="1">1
+<input type="radio" name="q26" value="2">2
+<input type="radio" name="q26" value="3">3
+<input type="radio" name="q26" value="4">4</p>
+<h3>Hospital Induction and Culture</h3>
+<p>Q27: Hospital Management conduct Induction Training  program for all new Staff covering the Mission, Strategic Plan, Working Units, Care Processes,Organisation and  Reporting Relationships 
+<input type="radio" name="q27" value="1">1
+<input type="radio" name="q27" value="2">2
+<input type="radio" name="q27" value="3">3
+<input type="radio" name="q27" value="4">4</p>
+<p>Q28: Hospital Unit Managers provide Job-related information like safety requirements, infection control and current Care Quality Improvement Strategies all Professionals and Trainees.    
+ <input type="radio" name="q28" value="1">1
+<input type="radio" name="q28" value="2">2
+<input type="radio" name="q28" value="3">3
+<input type="radio" name="q28" value="4">4</p>
+<p>Q29: Hospital Management prepares Staff for changing Hospital capability and capacity Needs. 
+<input type="radio" name="q29" value="1">1
+<input type="radio" name="q29" value="2">2
+<input type="radio" name="q29" value="3">3
+<input type="radio" name="q29" value="4">4</p>
+<p>Q30: Hospital Management ensures Staff continuity, prevent Staff reductions and minimize the impact of forced staff reductions. 
+ <input type="radio" name="q30" value="1">1
+<input type="radio" name="q30" value="2">2
+<input type="radio" name="q30" value="3">3
+<input type="radio" name="q30" value="4">4</p>
+
+    
+  </div>
+</form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+          <a href="#hrmpage2" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage4" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum3">Next</a>
+       <script>function sumf3() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum3').on('click', function() {
+    alert(sumf3());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="hrmpage4"class="hrm">
+  <div data-role="header">
+    
+  </div>
+<form name="hrm4">
+  <div data-role="main" class="ui-content">
+   <p>Q31:  Hospital ensures new staff represents the diverse ideas, cultures, and thinking of the patient and stakeholder community. 
+<input type="radio" name="q31" value="1">1
+<input type="radio" name="q31" value="2">2
+<input type="radio" name="q31" value="3">3
+<input type="radio" name="q31" value="4">4</p>
+
+<p>Q32: Hospital Management develops the Organizational Culture characterized by Open Communication, High - performance Work and Motivated Staff 
+<input type="radio" name="q32" value="1">1
+<input type="radio" name="q32" value="2">2
+<input type="radio" name="q32" value="3">3
+<input type="radio" name="q32" value="4">4</p>
+
+
+<p>Q33: Hospital Management ensure that Staff can contribute Diverse Ideas, Cultures and Independent thinking of Hospital Staff 
+<input type="radio" name="q33" value="1">1
+<input type="radio" name="q33" value="2">2
+<input type="radio" name="q33" value="3">3
+<input type="radio" name="q33" value="4">4</p>
+<h3>Staff Motivation and Working Environment</h3>
+<p>Q34: Hospital Management ensures workplace environmental factors like ensuring workforce health, safety, security and accessibility. 
+<input type="radio" name="q34" value="1">1
+<input type="radio" name="q34" value="2">2
+<input type="radio" name="q34" value="3">3
+<input type="radio" name="q34" value="4">4</p>
+<p>Q35: Hospital Management produces an annual plan for improving working conditions, which is implemented, monitored and evaluated. 
+<input type="radio" name="q35" value="1">1
+<input type="radio" name="q35" value="2">2
+<input type="radio" name="q35" value="3">3
+<input type="radio" name="q35" value="4">4</p>
+<p>Q36: Hospital Management has Staff Health, Safety and Security Performance Measures and Improvement Goals. 
+<input type="radio" name="q36" value="1">1
+<input type="radio" name="q36" value="2">2
+<input type="radio" name="q36" value="3">3
+<input type="radio" name="q36" value="4">4</p>
+<p>Q37: Hospital Management involves Staff in decisions impacting the Working Environment. 
+<input type="radio" name="q37" value="1">1
+<input type="radio" name="q37" value="2">2
+<input type="radio" name="q37" value="3">3
+<input type="radio" name="q37" value="4">4</p>
+<p>Q38: Hospital Management uses formal and informal assessment methods and measures to determine Staff Motivation and Staff Satisfaction. 
+<input type="radio" name="q38" value="1">1
+<input type="radio" name="q38" value="2">2
+<input type="radio" name="q38" value="3">3
+<input type="radio" name="q38" value="4">4</p>
+<p>Q39: Hospital Management uses different Methods and Measures across different Staff groups and Hospital Units. 
+<input type="radio" name="q39" value="1">1
+<input type="radio" name="q39" value="2">2
+<input type="radio" name="q39" value="3">3
+<input type="radio" name="q39" value="4">4</p>
+<p>Q40: Hospital Management use indicators like workforce retention, absenteeism, grievances, safety, and productivity , to assess and improve Staff Motivation. 
+<input type="radio" name="q40" value="1">1
+<input type="radio" name="q40" value="2">2
+<input type="radio" name="q40" value="3">3
+<input type="radio" name="q40" value="4">4</p>
+
+
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#hrmpage3" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage5" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum4">Next</a>
+           
+  <script>function sumf4() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum4').on('click', function() {
+    alert(sumf4());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="hrmpage5"class="hrm">
+  <div data-role="header">
+   
+  </div>
+<form name="hrm5">
+  <div data-role="main" class="ui-content">
+   <p>Q41: Hospital Management support Staff by tailoring Policies, services and benefits to the needs of diverse and different Staff groups and Hospital Units.
+    <input type="radio" name="q41" value="1">1
+<input type="radio" name="q41" value="2">2
+<input type="radio" name="q41" value="3">3
+<input type="radio" name="q41" value="4">4</p>
+
+ <p>Q42: Hospital Management conducts Surveys amongst different Staff Groups and Units to evaluate and identify elements that affect Staff Satisfaction.
+        <input type="radio" name="q42" value="1">1
+<input type="radio" name="q42" value="2">2
+<input type="radio" name="q42" value="3">3
+<input type="radio" name="q42" value="4">4</p>
+<p>Q43: Hospital Management conducts Surveys amongst different Staff Groups and Units to evaluate and identify elements that affect Staff Motivation.
+    <input type="radio" name="q43" value="1">1
+<input type="radio" name="q43" value="2">2
+<input type="radio" name="q43" value="3">3
+<input type="radio" name="q43" value="4">4</p>
+<p>Q44: Hospital Management evaluate and improve the Human Resources Management Policy with indicators which are monitored at set intervals.
+    <input type="radio" name="q44" value="1">1
+<input type="radio" name="q44" value="2">2
+<input type="radio" name="q44" value="3">3
+<input type="radio" name="q44" value="4">4</p>
+<h3>Promoting a Healthy Workplace</h3>
+ <p>Q45: Hospital Management has a Healthy and Safe Workplace Policy that covers Occupational Health Services for Hospital Staff.
+     <input type="radio" name="q45" value="1">1
+<input type="radio" name="q45" value="2">2
+<input type="radio" name="q45" value="3">3
+<input type="radio" name="q45" value="4">4</p>
+<p>Q46: Hospital Management supports the development of the hospital as a healthy and safe workplace including Health Promotion activities for Hospital Staff.
+<input type="radio" name="q46" value="1">1
+<input type="radio" name="q46" value="2">2
+<input type="radio" name="q46" value="3">3
+<input type="radio" name="q46" value="4">4</p>
+<p>Q47: Hospital Healthy and Safe Workplace Procedures and Guidelines are developed by multidisciplinary teams. 
+<input type="radio" name="q47" value="1">1
+<input type="radio" name="q47" value="2">2
+<input type="radio" name="q47" value="3">3
+<input type="radio" name="q47" value="4">4</p>
+<p>Q48: Hospital Management involve Staff members in making, auditing and reviewing the Healthy and Safe Workplace Policy 
+<input type="radio" name="q48" value="1">1
+<input type="radio" name="q48" value="2">2
+<input type="radio" name="q48" value="3">3
+<input type="radio" name="q48" value="4">4</p>
+<p>Q49: Hospital Management ensure Healthy and Safe Workplace Policies are available for all Staff. 
+<input type="radio" name="q49" value="1">1
+<input type="radio" name="q49" value="2">2
+<input type="radio" name="q49" value="3">3
+<input type="radio" name="q49" value="4">4</p>
+<p>Q50: Hospital Management conducts Annual staff surveys on individual behavior, knowledge of Policies, knowledge of supportive services and use of supportive seminars. 
+<input type="radio" name="q50" value="1">1
+<input type="radio" name="q50" value="2">2
+<input type="radio" name="q50" value="3">3
+<input type="radio" name="q50" value="4">4</p>
+
+  </div>
+</form>
+
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#hrmpage4" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage6" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum5">Next</a>
+        <script>function sumf5() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum5').on('click', function() {
+    alert(sumf5());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="hrmpage6"class="hrm">
+  <div data-role="header">
+    <h2><b>Human Resources Management</b></h2> 
+  </div>
+<form name="hrm6">
+  <div data-role="main" class="ui-content">
+
+
+<p>Q51: Hospital Management ensures that Working conditions in the Hospital comply with national laws and regulations.
+    <input type="radio" name="q51" value="1">1
+<input type="radio" name="q51" value="2">2
+<input type="radio" name="q51" value="3">3
+<input type="radio" name="q51" value="4">4</p>
+
+<p>Q52: Hospital Management in conjunction with Hospital Unit Staff identify workplace Risks and potential Occupational Injuries.
+<input type="radio" name="q52" value="1">1
+<input type="radio" name="q52" value="2">2
+<input type="radio" name="q52" value="3">3
+<input type="radio" name="q52" value="4">4</p>
+<p>Q53: Hospital Management ensures Staff Awareness of Risk Management Procedures and Compliance with health and safety requirements. 
+<input type="radio" name="q53" value="1">1
+<input type="radio" name="q53" value="2">2
+<input type="radio" name="q53" value="3">3
+<input type="radio" name="q53" value="4">4</p>
+<p>Q54: Hospital Management conducts Staff knowledge Survey on health promotion and experience with quality, choice and access to healthy food.
+<input type="radio" name="q54" value="1">1
+<input type="radio" name="q54" value="2">2
+<input type="radio" name="q54" value="3">3
+<input type="radio" name="q54" value="4">4</p>
+
+<p>Q55: Hospital Management provide Information on diet and physical exercise to staff.
+<input type="radio" name="q55" value="1">1
+<input type="radio" name="q55" value="2">2
+<input type="radio" name="q55" value="3">3
+<input type="radio" name="q55" value="4">4</p>
+<p>Q56: Hospital Management develop and maintain staff awareness on health issues, with regular Training of Staff. 
+<input type="radio" name="q56" value="1">1
+<input type="radio" name="q56" value="2">2
+<input type="radio" name="q56" value="3">3
+<input type="radio" name="q56" value="4">4</p>
+
+ <p>Q57: Hospital Management offer variety of healthy food for Staff on duty at the Hospital Canteen.  
+<input type="radio" name="q57" value="1">1
+<input type="radio" name="q57" value="2">2
+<input type="radio" name="q57" value="3">3
+<input type="radio" name="q57" value="4">4</p>
+<p>Q58: Hospital Management cater for Hospital staff that conscientiously object to certain specific tasks the Hospital Care Processes.
+<input type="radio" name="q58" value="1">1
+<input type="radio" name="q58" value="2">2
+<input type="radio" name="q58" value="3">3
+<input type="radio" name="q58" value="4">4</p>
+
+  <p>Q59: The Hospital conducts career counseling for Staff which is geared towards the development of the Hospital Staff.
+<input type="radio" name="q59" value="1">1
+<input type="radio" name="q59" value="2">2
+<input type="radio" name="q59" value="3">3
+<input type="radio" name="q59" value="4">4</p>
+<p>Q60: Hospital Management cater for Hospital staff that are involved in shocking events during their work.
+<input type="radio" name="q60" value="1">1
+<input type="radio" name="q60" value="2">2
+<input type="radio" name="q60" value="3">3
+<input type="radio" name="q60" value="4">4</p>
+
+
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#hrmpage5" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage7" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum6">Next</a>
+          <script>function sumf6() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum6').on('click', function() {
+    alert(sumf6());
+});</script>     
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="hrmpage7"class="hrm">
+  <div data-role="header">
+    <h2><b>Human Resources Management</b></h2> 
+  </div>
+<form name="hrm7">
+  <div data-role="main" class="ui-content">
+  
+<p>Q61: The Hospital has a system for registering and supervising leave of absence. 
+<input type="radio" name="q61" value="1">1
+<input type="radio" name="q61" value="2">2
+<input type="radio" name="q61" value="3">3
+<input type="radio" name="q61" value="4">4</p>
+<p>Q62: Hospital has an accessible, confidential and careful complaints procedure for Hospital Staff about their treatment by other members of Hospital Staff. 
+<input type="radio" name="q62" value="1">1
+<input type="radio" name="q62" value="2">2
+<input type="radio" name="q62" value="3">3
+<input type="radio" name="q62" value="4">4</p>
+<p>Q63: Hospital Management ensure confidentiality, quality and security of Staff Personal Information. 
+ <input type="radio" name="q63" value="1">1
+<input type="radio" name="q63" value="2">2
+<input type="radio" name="q63" value="3">3
+<input type="radio" name="q63" value="4">4</p>
+
+<p>Q64: Hospital Management has an information system which collects all data required for staff administration. 
+<input type="radio" name="q64" value="1">1
+<input type="radio" name="q64" value="2">2
+<input type="radio" name="q64" value="3">3
+<input type="radio" name="q64" value="4">4</p>
+<p>Q65: Hospital Management produces a complete, up-to-date file for each Hospital Staff.
+ <input type="radio" name="q65" value="1">1
+<input type="radio" name="q65" value="2">2
+<input type="radio" name="q65" value="3">3
+<input type="radio" name="q65" value="4">4</p>
+<h3>Staff Performance Management</h3>
+<p>Q66: Hospital Staff Performance Management system support high - performance work and workforce Motivation. 
+<input type="radio" name="q66" value="1">1
+<input type="radio" name="q66" value="2">2
+<input type="radio" name="q66" value="3">3
+<input type="radio" name="q66" value="4">4</p>
+<p>Q67: Hospital Staff Performance Management system includes staff compensation, reward, recognition, and incentive practices.
+<input type="radio" name="q67" value="1">1
+<input type="radio" name="q67" value="2">2
+<input type="radio" name="q67" value="3">3
+<input type="radio" name="q67" value="4">4</p>
+<p>Q68: The Hospital Performance Management system focuses on the Patient and Stakeholder with achievement of Action Plans.
+<input type="radio" name="q68" value="1">1
+<input type="radio" name="q68" value="2">2
+<input type="radio" name="q68" value="3">3
+<input type="radio" name="q68" value="4">4</p>
+<p>Q69: Hospital Staff Performance Management help accomplish Hospital work and exceed Performance Expectations.
+<input type="radio" name="q69" value="1">1
+<input type="radio" name="q69" value="2">2
+<input type="radio" name="q69" value="3">3
+<input type="radio" name="q69" value="4">4</p>
+
+<p>Q70: Hospital Performance Management System motivates Staff to capitalize on the Hospital’s core competencies, address Strategic challenges and implement Action Plans
+ <input type="radio" name="q70" value="1">1
+<input type="radio" name="q70" value="2">2
+<input type="radio" name="q70" value="3">3
+<input type="radio" name="q70" value="4">4</p>
+
+
+  </div>
+</form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#hrmpage6" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage8" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum7">Next</a>
+         <script>function sumf7() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum7').on('click', function() {
+    alert(sumf7());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="hrmpage8"class="hrm">
+  <div data-role="header">
+    <h2><b>Human Resources Management</b></h2> 
+  </div>
+    <form name="hrm8">
+
+  <div data-role="main" class="ui-content">
+
+<p>Q71: Hospital Managers conduct Performance Appraisal for all Healthcare Professional to identify  Individual training needs and set Performance Goals for the following year. 
+<input type="radio" name="q71" value="1">1
+<input type="radio" name="q71" value="2">2
+<input type="radio" name="q71" value="3">3
+<input type="radio" name="q71" value="4">4</p>
+
+<p>Q72: Hospital Staff Performance Appraisal also covers individual performance in the preceding period and the expectations regarding the forthcoming period. 
+<input type="radio" name="q72" value="1">1
+<input type="radio" name="q72" value="2">2
+<input type="radio" name="q72" value="3">3
+<input type="radio" name="q72" value="4">4</p>
+
+<p>Q73: Hospital Management conducts Exit Interview into the Experiences of Hospital Staff that leave the Hospital. 
+<input type="radio" name="q73" value="1">1
+<input type="radio" name="q73" value="2">2
+<input type="radio" name="q73" value="3">3
+<input type="radio" name="q73" value="4">4</p>
+<p>Q74: Hospital Management use results of Exit Interviews to Improve the Working Units and Work Processes. 
+<input type="radio" name="q74" value="1">1
+<input type="radio" name="q74" value="2">2
+<input type="radio" name="q74" value="3">3
+<input type="radio" name="q74" value="4">4</p>
+<p>Q75: Hospital Management assesses its Staff capability and capacity needs of the Hospital, including skills, competencies, and staffing levels. 
+<input type="radio" name="q75" value="1">1
+<input type="radio" name="q75" value="2">2
+<input type="radio" name="q75" value="3">3
+<input type="radio" name="q75" value="4">4</p>
+<h3>Learning and Development Program</h3>
+<p>Q76: Hospital has a formal Continuing Professional Development Program for improving skill levels of Healthcare Professionals. 
+<input type="radio" name="q76" value="1">1
+<input type="radio" name="q76" value="2">2
+<input type="radio" name="q76" value="3">3
+<input type="radio" name="q76" value="4">4</p>
+<p>Q77: Hospital Management ensure Hospital Staff acquire Skills and Knowledge to improve Hospital’s core competencies , strategic challenges and accomplish its short-term and long-term action plans.
+<input type="radio" name="q77" value="1">1
+<input type="radio" name="q77" value="2">2
+<input type="radio" name="q77" value="3">3
+<input type="radio" name="q77" value="4">4</p>
+<p>Q78: Hospital Management encourage Hospital Staff to utilize Skills and Knowledge acquired to improve Innovation and Organizational Performance.
+  <input type="radio" name="q78" value="1">1
+<input type="radio" name="q78" value="2">2
+<input type="radio" name="q78" value="3">3
+<input type="radio" name="q78" value="4">4</p>
+<p>Q79: Hospital Management increases Staff Knowledge of ethical Healthcare and Business Practices as part of its Learning and Development Program.
+<input type="radio" name="q79" value="1">1
+<input type="radio" name="q79" value="2">2
+<input type="radio" name="q79" value="3">3
+<input type="radio" name="q79" value="4">4</p>
+
+<p>Q80: Hospital Management fulfill both self-identified learning and development needs and those identified by supervisors, managers, and senior leaders with the Learning and Development Program.
+ <input type="radio" name="q80" value="1">1
+<input type="radio" name="q80" value="2">2
+<input type="radio" name="q80" value="3">3
+<input type="radio" name="q80" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#hrmpage7" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage9" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum8">Next</a>
+           <script>function sumf8() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum8').on('click', function() {
+    alert(sumf8());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+
+
+<div data-role="page" id="hrmpage9"class="hrm">
+  <div data-role="header">
+    
+  </div>
+    <form name="hrm9">
+
+  <div data-role="main" class="ui-content">
+   
+<p>Q81: Hospital Management identify and improve Staff Training Needs with the Learning and Development Program.
+<input type="radio" name="q81" value="1">1
+<input type="radio" name="q81" value="2">2
+<input type="radio" name="q81" value="3">3
+<input type="radio" name="q81" value="4">4</p>
+
+<p>Q82: Hospital Management encourage transfer of knowledge from departing or retiring Staff to current and new Staff. 
+<input type="radio" name="q82" value="1">1
+<input type="radio" name="q82" value="2">2
+<input type="radio" name="q82" value="3">3
+<input type="radio" name="q82" value="4">4</p>
+
+<p>Q83: Hospital Management evaluates the effectiveness and efficiency of the Hospital Learning and Development Program.
+<input type="radio" name="q83" value="1">1
+<input type="radio" name="q83" value="2">2
+<input type="radio" name="q83" value="3">3
+<input type="radio" name="q83" value="4">4</p>
+<p>Q84: Hospital Management actively supports effective succession planning for management and leadership positions.
+<input type="radio" name="q84" value="1">1
+<input type="radio" name="q84" value="2">2
+<input type="radio" name="q84" value="3">3
+<input type="radio" name="q84" value="4">4</p>
+<p>Q85: Hospital Management anticipates and provides for Knowledge and Skills Gap due to technological developments or departure of Hospital Staff with specific expertise.
+<input type="radio" name="q85" value="1">1
+<input type="radio" name="q85" value="2">2
+<input type="radio" name="q85" value="3">3
+<input type="radio" name="q85" value="4">4</p>
+<p>Q86: Hospital Management includes Health Promotion Training and Development in the Hospital Learning and Development Program. 
+<input type="radio" name="q86" value="1">1
+<input type="radio" name="q86" value="2">2
+<input type="radio" name="q86" value="3">3
+<input type="radio" name="q86" value="4">4</p>
+<p>Q87: Hospital Management ensure Staff acquire and maintain the required knowledge and skills necessary for the Hospital Protocols, Procedures and Work Instructions.  
+<input type="radio" name="q87" value="1">1
+<input type="radio" name="q87" value="2">2
+<input type="radio" name="q87" value="3">3
+<input type="radio" name="q87" value="4">4</p>
+<p>Q88: Hospital Management establish Job Expertise Profile of Care Processes for each Hospital Unit.
+  <input type="radio" name="q88" value="1">1
+<input type="radio" name="q88" value="2">2
+<input type="radio" name="q88" value="3">3
+<input type="radio" name="q88" value="4">4</p>
+<p>Q89: Hospital Management maintains the level of individual specialist knowledge necessary for Professional Practice and training other Hospital Staff.
+<input type="radio" name="q89" value="1">1
+<input type="radio" name="q89" value="2">2
+<input type="radio" name="q89" value="3">3
+<input type="radio" name="q89" value="4">4</p>
+
+<p>Q90: Hospital Management ensure effective career progression for the entire Hospital Staff.
+ <input type="radio" name="q90" value="1">1
+<input type="radio" name="q90" value="2">2
+<input type="radio" name="q90" value="3">3
+<input type="radio" name="q90" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#hrmpage8" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage10" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum9">Next</a>
+           <script>function sumf9() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum9').on('click', function() {
+    alert(sumf9());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        
+        <div data-role="page" id="hrmpage10"class="hrm">
+  <div data-role="header">
+   
+  </div>
+    <form name="hrm10">
+
+  <div data-role="main" class="ui-content">
+   
+<p>Q91: Hospital Learning and Development Program contributes to Career Progression of Hospital Staff.
+<input type="radio" name="q91" value="1">1
+<input type="radio" name="q91" value="2">2
+<input type="radio" name="q91" value="3">3
+<input type="radio" name="q91" value="4">4</p>
+
+<p>Q92: Hospital Management provide and maintain appropriate level of Skills and Resources necessary for High-risk Tasks and Care Processes. 
+<input type="radio" name="q92" value="1">1
+<input type="radio" name="q92" value="2">2
+<input type="radio" name="q92" value="3">3
+<input type="radio" name="q92" value="4">4</p>
+
+<p>Q93: Hospital Management ensure that Healthcare Professionals possess appropriate Skills and Knowledge for the required professional level of each Staff contributing to Care Processes.
+<input type="radio" name="q93" value="1">1
+<input type="radio" name="q93" value="2">2
+<input type="radio" name="q93" value="3">3
+<input type="radio" name="q93" value="4">4</p>
+
+<p>Q94: Hospital Management ensure Healthcare Professionals acquire new knowledge and skills relating to the Job.
+<input type="radio" name="q94" value="1">1
+<input type="radio" name="q94" value="2">2
+<input type="radio" name="q94" value="3">3
+<input type="radio" name="q94" value="4">4</p>
+
+  </div>
+  </form>
+
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#hrmpage9" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rmpage" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum10">Next</a>
+           <script>function sumf8() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum10').on('click', function() {
+    alert(sumf10());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+
+    </body>
+</html>

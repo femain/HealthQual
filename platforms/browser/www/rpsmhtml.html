@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Risk & Patient Safety Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+      
+       
+
+    </head>
+    <body>
+         
+        <div data-role="page" id="rpsmpage" class="rpsm">
+  <div data-role="header" style="text-align:left;"data-type="honrizontal">
+    <h2><b>Risk & Patient Safety Management</b></h2> 
+    <a href="hqmhtml.html" class="ui-btn ui-corner-all ui-shadow ui-icon-home">Home</a>
+     
+  </div>
+          
+  <div data-role="main" class="ui-content">
+    
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <form name="rpsm1">
+          <h3>Healthcare Professionals Safety Program</h3>
+    <p>Q1: Hospital Management observes and prevents Safety Incidents that may affect Hospital Staff.
+<input type="radio" name="q1" value="1">1
+<input type="radio" name="q1" value="2">2
+<input type="radio" name="q1" value="3">3
+<input type="radio" name="q1" value="4">4</p>
+
+ <p>Q2: Hospital Unit Staff are aware of the risky nature of their Jobs and contribute actively to the safety of their own work environment.
+<input type="radio" name="q2" value="1">1
+<input type="radio" name="q2" value="2">2
+<input type="radio" name="q2" value="3">3
+<input type="radio" name="q2" value="4">4</p>
+<p>Q3: Hospital Management conducts systematic observation and analysis of Health risks for Hospital Unit Staff and each working unit and records improvements of the observed shortcomings. 
+<input type="radio" name="q3" value="1">1
+<input type="radio" name="q3" value="2">2
+<input type="radio" name="q3" value="3">3
+<input type="radio" name="q3" value="4">4</p>
+<p>Q4: Hospital Management conducts systematic notification, analysis and registration of industrial accidents and dangerous situations for Hospital Unit Staff and each working unit.
+<input type="radio" name="q4" value="1">1
+<input type="radio" name="q4" value="2">2
+<input type="radio" name="q4" value="3">3
+<input type="radio" name="q4" value="4">4</p>
+
+ <p>Q5: Hospital Management conducts a risk inventory and evaluation (RI&E) periodically in all Units and workplaces of the Hospital.
+<input type="radio" name="q5" value="1">1
+<input type="radio" name="q5" value="2">2
+<input type="radio" name="q5" value="3">3
+<input type="radio" name="q5" value="4">4</p>
+<p>Q6: Hospital Management has developed Preventive Guidelines and Procedures for workplaces which are structurally considered to be less safe.
+<input type="radio" name="q6" value="1">1
+<input type="radio" name="q6" value="2">2
+<input type="radio" name="q6" value="3">3
+<input type="radio" name="q6" value="4">4</p>
+<p>Q7: Hospital Management conducts periodic and systematic research about Staff satisfaction regarding the working climate and working environment. 
+<input type="radio" name="q7" value="1">1
+<input type="radio" name="q7" value="2">2
+<input type="radio" name="q7" value="3">3
+<input type="radio" name="q7" value="4">4</p>
+<p>Q8: Hospital pays Special attention to Healthcare Professionals whose expertise is indispensable or scarce for the Hospital. 
+<input type="radio" name="q8" value="1">1
+<input type="radio" name="q8" value="2">2
+<input type="radio" name="q8" value="3">3
+<input type="radio" name="q8" value="4">4</p>
+<p>Q9: Hospital has an Infection Prevention Program for preventing and managing infection of Healthcare Professionals, with input from occupational medicine specialists. 
+<input type="radio" name="q9" value="1">1
+<input type="radio" name="q9" value="2">2
+<input type="radio" name="q9" value="3">3
+<input type="radio" name="q9" value="4">4</p>
+<p>Q10: Hospital has defined Procedures to prevent accidents through exposure to blood or other biological fluids. 
+<input type="radio" name="q10" value="1">1
+<input type="radio" name="q10" value="2">2
+<input type="radio" name="q10" value="3">3
+<input type="radio" name="q10" value="4">4</p>
+
+
+      </form>
+
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         
+         <a href="#hqmpage" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage2" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" id="show_sum1">Next</a>
+         <script>function sumf1() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum1').on('click', function() {
+    alert(sumf1());
+    if (window.localStorage) {
+                localStorage.setItem("f1", "sumf1()"); 
+		alert("The data has been stored successfully.");
+	}
+            
+   
+});</script> 
+         
+         <h5>&copy; bestratedhospitals.org</h5>
+  </div>
+
+  </div>
+</div> 
+
+<div data-role="page" id="rpsmpage2"class="rpsm">
+  <div data-role="header">
+  <h2><b>Care Process Management</b></h2> 
+  </div>
+<form name="rpsm2">
+  <div data-role="main" class="ui-content">
+    
+   
+   <p>Q11: The Hospital has documented procedures for notifying, collecting details of and analyzing exposure to blood and other biological fluids. 
+    <input type="radio" name="q11" value="1">1
+<input type="radio" name="q11" value="2">2
+<input type="radio" name="q11" value="3">3
+<input type="radio" name="q11" value="4">4</p>
+
+<p>Q12: The Hospital has documented procedures for caring for Health Professionals involved exposure to blood and other biological fluids.
+<input type="radio" name="q12" value="1">1
+<input type="radio" name="q12" value="2">2
+<input type="radio" name="q12" value="3">3
+<input type="radio" name="q12" value="4">4</p>
+<p>Q13: Hospital Management ensure Healthcare Professionals are immunised against specific diseases associated with working in Hospitals. 
+ <input type="radio" name="q13" value="1">1
+<input type="radio" name="q13" value="2">2
+<input type="radio" name="q13" value="3">3
+<input type="radio" name="q13" value="4">4</p>
+<p>Q14: Hospital Management has developed Preventive Measures to prevent the risks of contamination  for Healthcare Professionals. 
+<input type="radio" name="q14" value="1">1
+<input type="radio" name="q14" value="2">2
+<input type="radio" name="q14" value="3">3
+<input type="radio" name="q14" value="4">4</p>
+<h3>Hospital has a Patient Safety Program</h3>
+<p>Q15: Hospital Management has developed a Patient Safety Program that notifies Leaders of occurrence of Sentinel Events 
+<input type="radio" name="q15" value="1">1
+<input type="radio" name="q15" value="2">2
+<input type="radio" name="q15" value="3">3
+<input type="radio" name="q15" value="4">4</p>
+<h3>Identify Patients Correctly</h3>
+<p>Q16: The Hospital has a standardised procedure for Patient identification e.g. wrist bands, photo identification. 
+<input type="radio" name="q16" value="1">1
+<input type="radio" name="q16" value="2">2
+<input type="radio" name="q16" value="3">3
+<input type="radio" name="q16" value="4">4</p>
+
+ <p>Q17: Hospital Unit Staff use Patient's name and date of birth are used to identify Patients before providing any service or procedure. 
+ <input type="radio" name="q17" value="1">1
+<input type="radio" name="q17" value="2">2
+<input type="radio" name="q17" value="3">3
+<input type="radio" name="q17" value="4">4</p>
+<p>Q18: Healthcare Professionals and Hospital Unit Staff verify Patient's identity at various stages of care.
+<input type="radio" name="q18" value="1">1
+<input type="radio" name="q18" value="2">2
+<input type="radio" name="q18" value="3">3
+<input type="radio" name="q18" value="4">4</p>
+ <h3>Patient Safety Training</h3>
+  <p>Q19: Hospital Management ensure that Hospital Staff are trained annually on Patient Safety. 
+ <input type="radio" name="q19" value="1">1
+<input type="radio" name="q19" value="2">2
+<input type="radio" name="q19" value="3">3
+<input type="radio" name="q19" value="4">4</p>
+<p>Q20: Hospital Management ensure that the Annual Staff Training includes the 4 Patient Safety Competencies of Effective Communication, Adverse Events Reporting, Teamwork and  Appilcation of core Patient Safety knowledge, skills and values to everyday work. 
+<input type="radio" name="q20" value="1">1
+<input type="radio" name="q20" value="2">2
+<input type="radio" name="q20" value="3">3
+<input type="radio" name="q20" value="4">4</p>
+  </div>
+  </form>
+
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+             <a href="#rpsmpage1" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage3" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum2">Next</a>
+           <script>function sumf2() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum2').on('click', function() {
+    alert(sumf2());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="rpsmpage3"class="rpsm">
+  <div data-role="header">
+    
+  </div>
+<form name="rpsm3">
+  <div data-role="main" class="ui-content">
+      <h3>Improve Effective Communication</h3>
+      <p>Q21: Hospital Management ensures use of standardized protocol to transfer client information like using a read-back technique, SBAR, or electronic medical records across different points of care. 
+<input type="radio" name="q21" value="1">1
+<input type="radio" name="q21" value="2">2
+<input type="radio" name="q21" value="3">3
+<input type="radio" name="q21" value="4">4</p>
+<p>Q22: Hospital Management has developed Protocols like transfer forms and checklists for timely transfer of Patient information across different points of care. 
+<input type="radio" name="q22" value="1">1
+<input type="radio" name="q22" value="2">2
+<input type="radio" name="q22" value="3">3
+<input type="radio" name="q22" value="4">4</p>
+<h3>Improve the Safety of High-Alert Medications</h3>
+<p>Q23: Hospital Unit Staff reconciles Patient medications upon admission by documenting a comprehensive list of current medications taken by Patient before admission to the Hospital 
+<input type="radio" name="q23" value="1">1
+<input type="radio" name="q23" value="2">2
+<input type="radio" name="q23" value="3">3
+<input type="radio" name="q23" value="4">4</p>
+
+<p>Q24: Hospital Unit Staff compare and document Pre-admission medication list with the new medications ordered. 
+<input type="radio" name="q24" value="1">1
+<input type="radio" name="q24" value="2">2
+<input type="radio" name="q24" value="3">3
+<input type="radio" name="q24" value="4">4</p>
+<p>Q25: Hospital Unit Staff resolve Differences of old and new drugs and make appropriate changes to the new drugs as necessary. 
+<input type="radio" name="q25" value="1">1
+<input type="radio" name="q25" value="2">2
+<input type="radio" name="q25" value="3">3
+<input type="radio" name="q25" value="4">4</p>
+<p>Q26: Hospital Management ensures Medication Reconciliation is a shared responsibility between Patients and consulting Healthcare Professionals. 
+<input type="radio" name="q26" value="1">1
+<input type="radio" name="q26" value="2">2
+<input type="radio" name="q26" value="3">3
+<input type="radio" name="q26" value="4">4</p>
+<p>Q27: Hospital Management ensures Medication Reconciliation Procedure is used in all Clinical Hospital Units. 
+<input type="radio" name="q27" value="1">1
+<input type="radio" name="q27" value="2">2
+<input type="radio" name="q27" value="3">3
+<input type="radio" name="q27" value="4">4</p>
+<h3>Ensure Correct-Site, Correct-Procedure, Correct-Patient Surgery</h3>
+<p>Q28: Hospital Management ensure Safe Surgery in the Hospital with the WHO Surgical Safety Checklist.    
+ <input type="radio" name="q28" value="1">1
+<input type="radio" name="q28" value="2">2
+<input type="radio" name="q28" value="3">3
+<input type="radio" name="q28" value="4">4</p>
+<p>Q29: Hospital Management ensure that Hospital Unit Staff perform clear, unambiguous preoperative marking of the precise site where the surgery will be performed. 
+<input type="radio" name="q29" value="1">1
+<input type="radio" name="q29" value="2">2
+<input type="radio" name="q29" value="3">3
+<input type="radio" name="q29" value="4">4</p>
+<p>Q30: Hospital Management ensure Hospital Unit Staff perform Preoperative Verification Procedures to gather information prior to starting the procedure. 
+ <input type="radio" name="q30" value="1">1
+<input type="radio" name="q30" value="2">2
+<input type="radio" name="q30" value="3">3
+<input type="radio" name="q30" value="4">4</p>
+ 
+  </div>
+</form>
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+          <a href="#rpsmpage2" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage4" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum3">Next</a>
+       <script>function sumf3() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum3').on('click', function() {
+    alert(sumf3());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="rpsmpage4"class="rpsm">
+  <div data-role="header">
+    
+  </div>
+<form name="rpsm4">
+  <div data-role="main" class="ui-content">
+   <p>Q31: Hospital Management ensure Time-outs immediately prior to Procedures. 
+<input type="radio" name="q31" value="1">1
+<input type="radio" name="q31" value="2">2
+<input type="radio" name="q31" value="3">3
+<input type="radio" name="q31" value="4">4</p>
+
+<p>Q32: Hospital Management ensure that antimicrobial agents are administered for prophylaxis within 60 minutes before skin incision. 
+<input type="radio" name="q32" value="1">1
+<input type="radio" name="q32" value="2">2
+<input type="radio" name="q32" value="3">3
+<input type="radio" name="q32" value="4">4</p>
+
+
+<p>Q33: Hospital Management ensures that prophylactic antimicrobial agents are discontinued 24 hours after the surgical procedure. 
+<input type="radio" name="q33" value="1">1
+<input type="radio" name="q33" value="2">2
+<input type="radio" name="q33" value="3">3
+<input type="radio" name="q33" value="4">4</p>
+<h3>Reduce the Risk of Health Care–Associated Infections</h3>
+<p>Q34: Hospital has an Infection Control Program, which observe, register and report Hospital Associated Infections. 
+<input type="radio" name="q34" value="1">1
+<input type="radio" name="q34" value="2">2
+<input type="radio" name="q34" value="3">3
+<input type="radio" name="q34" value="4">4</p>
+<p>Q35: The Hospital Infection Control Program include Preventive Actions, Procedures for monitoring and disseminating results, Infection Control Training Programs and Assessment measures. 
+<input type="radio" name="q35" value="1">1
+<input type="radio" name="q35" value="2">2
+<input type="radio" name="q35" value="3">3
+<input type="radio" name="q35" value="4">4</p>
+<p>Q36: The Hospital has an empowered Healthcare Manager, who is responsible for the Infection Control Program and has necessary access to all information needed to implement the program. 
+<input type="radio" name="q36" value="1">1
+<input type="radio" name="q36" value="2">2
+<input type="radio" name="q36" value="3">3
+<input type="radio" name="q36" value="4">4</p>
+<p>Q37: The Infection Control Program is developed jointly by Executive Management, the Medical Committee, Director of Nursing and the Healthcare professionals concerned. 
+<input type="radio" name="q37" value="1">1
+<input type="radio" name="q37" value="2">2
+<input type="radio" name="q37" value="3">3
+<input type="radio" name="q37" value="4">4</p>
+<p>Q38: Hospital Management coordinate Infection Control activities by various Healthcare Units with clearly defined Responsibilities. 
+<input type="radio" name="q38" value="1">1
+<input type="radio" name="q38" value="2">2
+<input type="radio" name="q38" value="3">3
+<input type="radio" name="q38" value="4">4</p>
+<p>Q39: Hospital Management ensure all Healthcare Professionals are aware of Infection Control activities. 
+<input type="radio" name="q39" value="1">1
+<input type="radio" name="q39" value="2">2
+<input type="radio" name="q39" value="3">3
+<input type="radio" name="q39" value="4">4</p>
+<p>Q40: Hospital Management train Health professionals in implementing the Infection Control Program. 
+<input type="radio" name="q40" value="1">1
+<input type="radio" name="q40" value="2">2
+<input type="radio" name="q40" value="3">3
+<input type="radio" name="q40" value="4">4</p>
+
+
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#rpsmpage3" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage5" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum4">Next</a>
+           
+  <script>function sumf4() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum4').on('click', function() {
+    alert(sumf4());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="rpsmpage5"class="rpsm">
+  <div data-role="header">
+   
+  </div>
+<form name="rpsm5">
+  <div data-role="main" class="ui-content">
+   <p>Q41: Hospital Management evaluates the Infection Control Program annually with analysis of good practice indicators and comparing results obtained with Set Goals.
+    <input type="radio" name="q41" value="1">1
+<input type="radio" name="q41" value="2">2
+<input type="radio" name="q41" value="3">3
+<input type="radio" name="q41" value="4">4</p>
+
+ <p>Q42: Hospital Management conducts Targeted monitoring of At-risk Hospital Units under the Infection Control Program
+        <input type="radio" name="q42" value="1">1
+<input type="radio" name="q42" value="2">2
+<input type="radio" name="q42" value="3">3
+<input type="radio" name="q42" value="4">4</p>
+<p>Q43: Hospital Management modifies Infection Control Program on the basis of analysed Data
+    <input type="radio" name="q43" value="1">1
+<input type="radio" name="q43" value="2">2
+<input type="radio" name="q43" value="3">3
+<input type="radio" name="q43" value="4">4</p>
+<p>Q44: Hospital Management monitors Changes in the level of antibiotic-resistant bacteria under the Infection Control Program
+    <input type="radio" name="q44" value="1">1
+<input type="radio" name="q44" value="2">2
+<input type="radio" name="q44" value="3">3
+<input type="radio" name="q44" value="4">4</p>
+
+ <p>Q45: Hospital Management have Protocols for prescribing Antibiotics for Therapy and Prophylaxis.
+     <input type="radio" name="q45" value="1">1
+<input type="radio" name="q45" value="2">2
+<input type="radio" name="q45" value="3">3
+<input type="radio" name="q45" value="4">4</p>
+<p>Q46: Hospital Management monitors surgical wound infections, catheter related infections, bacteremias and pulmonary infections contracted in intensive care under the Infection Control Program
+<input type="radio" name="q46" value="1">1
+<input type="radio" name="q46" value="2">2
+<input type="radio" name="q46" value="3">3
+<input type="radio" name="q46" value="4">4</p>
+<p>Q47: Hospital Management monitor Proper use of Antibiotics under the Infection Control Program to control bacterial resistance, across the whole Hospital and Healthcare Units 
+<input type="radio" name="q47" value="1">1
+<input type="radio" name="q47" value="2">2
+<input type="radio" name="q47" value="3">3
+<input type="radio" name="q47" value="4">4</p>
+<p>Q48: The Hospital has an Infection Control Committee which monitors the Hospital's Infection Control Program and disseminate information obtained to all Clinical, Ancillary and Administrative Units. 
+<input type="radio" name="q48" value="1">1
+<input type="radio" name="q48" value="2">2
+<input type="radio" name="q48" value="3">3
+<input type="radio" name="q48" value="4">4</p>
+<p>Q49: The Infection Control Committee is consulted on projects that could impact Hospital Hygiene like equipping premises, organizing flows, Equipment purchase, Building and scheduling renovation work. 
+<input type="radio" name="q49" value="1">1
+<input type="radio" name="q49" value="2">2
+<input type="radio" name="q49" value="3">3
+<input type="radio" name="q49" value="4">4</p>
+<p>Q50: The Infection Control Committee produces an annual activity report including Conclusions and recommendations for the Executive Management, Hospital Governing Board and Hospital Units. 
+<input type="radio" name="q50" value="1">1
+<input type="radio" name="q50" value="2">2
+<input type="radio" name="q50" value="3">3
+<input type="radio" name="q50" value="4">4</p>
+
+
+   
+  </div>
+</form>
+
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#rpsmpage4" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage6" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum5">Next</a>
+        <script>function sumf5() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum5').on('click', function() {
+    alert(sumf5());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="rpsmpage6"class="rpsm">
+  <div data-role="header">
+    <h2><b>Risk & Patient Safety Management</b></h2> 
+  </div>
+<form name="rpsm6">
+  <div data-role="main" class="ui-content">
+
+
+<p>Q51: Hospital Management provides continuous Training on Hygiene for all temporary and permanent Healthcare Professionals.
+    <input type="radio" name="q51" value="1">1
+<input type="radio" name="q51" value="2">2
+<input type="radio" name="q51" value="3">3
+<input type="radio" name="q51" value="4">4</p>
+
+<p>Q52: Hospital Management conducts regular Surveys on Hygiene , including measurements of the air quality and water quality for places with increased risk for hospital infections.
+<input type="radio" name="q52" value="1">1
+<input type="radio" name="q52" value="2">2
+<input type="radio" name="q52" value="3">3
+<input type="radio" name="q52" value="4">4</p>
+<p>Q53: Hospital Management evaluates Hygiene Surveys and measurements of the air quality and water quality to develop targeted Improvement measures. 
+<input type="radio" name="q53" value="1">1
+<input type="radio" name="q53" value="2">2
+<input type="radio" name="q53" value="3">3
+<input type="radio" name="q53" value="4">4</p>
+<p>Q54: Hospital Infection Control Procedures are documented, validated, implemented, assessed regularly to monitor compliance and relevance
+<input type="radio" name="q54" value="1">1
+<input type="radio" name="q54" value="2">2
+<input type="radio" name="q54" value="3">3
+<input type="radio" name="q54" value="4">4</p>
+
+<p>Q55: Hospital Management trains Hospital Unit Staff in Infection Control Procedures, which are defined responsibility of a Healthcare Professional
+<input type="radio" name="q55" value="1">1
+<input type="radio" name="q55" value="2">2
+<input type="radio" name="q55" value="3">3
+<input type="radio" name="q55" value="4">4</p>
+<p>Q56: Hospital has Procedures on storage, distribution, use and reuse of sterile resources and materials. 
+<input type="radio" name="q56" value="1">1
+<input type="radio" name="q56" value="2">2
+<input type="radio" name="q56" value="3">3
+<input type="radio" name="q56" value="4">4</p>
+
+ <p>Q57: Hospital has Procedures on maintenance, cleaning, sterilization, transportation, storage, sterile use of instruments and specific equipment.  
+<input type="radio" name="q57" value="1">1
+<input type="radio" name="q57" value="2">2
+<input type="radio" name="q57" value="3">3
+<input type="radio" name="q57" value="4">4</p>
+<p>Q58: Hospital has Procedures on cleaning and disinfecting flexible endoscopes,which is a defined responsibility of a Healthcare Professional
+<input type="radio" name="q58" value="1">1
+<input type="radio" name="q58" value="2">2
+<input type="radio" name="q58" value="3">3
+<input type="radio" name="q58" value="4">4</p>
+
+  <p>Q59: Hospital Management has a Quality Assurance System on Sterilisation.
+<input type="radio" name="q59" value="1">1
+<input type="radio" name="q59" value="2">2
+<input type="radio" name="q59" value="3">3
+<input type="radio" name="q59" value="4">4</p>
+<p>Q60: Hospital has Procedures on disposal of sorted hospital refuse that ensures the safety of patients, Hospital Staff, visitors and the environment.
+<input type="radio" name="q60" value="1">1
+<input type="radio" name="q60" value="2">2
+<input type="radio" name="q60" value="3">3
+<input type="radio" name="q60" value="4">4</p>
+
+
+  </div>
+  </form>
+
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#rpsmpage5" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage7" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum6">Next</a>
+          <script>function sumf6() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum6').on('click', function() {
+    alert(sumf6());
+});</script>     
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        <div data-role="page" id="rpsmpage7"class="rpsm">
+  <div data-role="header">
+    
+  </div>
+<form name="rpsm7">
+  <div data-role="main" class="ui-content">
+  
+<p>Q61: Hospital has Procedures for cleaning and disinfecting multiple-use equipment and medical devices that cannot be sterilized to control risk of infection.  
+<input type="radio" name="q61" value="1">1
+<input type="radio" name="q61" value="2">2
+<input type="radio" name="q61" value="3">3
+<input type="radio" name="q61" value="4">4</p>
+<p>Q62: Hospital has Procedures to control environment related infections. 
+<input type="radio" name="q62" value="1">1
+<input type="radio" name="q62" value="2">2
+<input type="radio" name="q62" value="3">3
+<input type="radio" name="q62" value="4">4</p>
+<p>Q63: Hospital Management involve Patients in preventive actions against Infections which concern them. 
+ <input type="radio" name="q63" value="1">1
+<input type="radio" name="q63" value="2">2
+<input type="radio" name="q63" value="3">3
+<input type="radio" name="q63" value="4">4</p>
+
+<p>Q64: Hospital Management ensure Patient, Hospital Staff and Visitors Accommodation and Inventories are regularly cleaned. 
+<input type="radio" name="q64" value="1">1
+<input type="radio" name="q64" value="2">2
+<input type="radio" name="q64" value="3">3
+<input type="radio" name="q64" value="4">4</p>
+<h3>Hand Hygiene</h3>
+<p>Q65: Hospital Management provides education on proper hand hygiene techniques to all Hospital Unit Staff.
+ <input type="radio" name="q65" value="1">1
+<input type="radio" name="q65" value="2">2
+<input type="radio" name="q65" value="3">3
+<input type="radio" name="q65" value="4">4</p>
+<p>Q66: Hospital Management provides Promotional hand hygiene reminders for display in Hospital Units. 
+<input type="radio" name="q66" value="1">1
+<input type="radio" name="q66" value="2">2
+<input type="radio" name="q66" value="3">3
+<input type="radio" name="q66" value="4">4</p>
+<p>Q67: Hospital Management provide Health care workers with a readily accessible alcohol-based hand rub at the point of patient care.
+<input type="radio" name="q67" value="1">1
+<input type="radio" name="q67" value="2">2
+<input type="radio" name="q67" value="3">3
+<input type="radio" name="q67" value="4">4</p>
+<p>Q68: Hospital Management provide access to safe continuous water supply at all faucets and access to necessary resources like soap and paper towels to perform hand washing.
+<input type="radio" name="q68" value="1">1
+<input type="radio" name="q68" value="2">2
+<input type="radio" name="q68" value="3">3
+<input type="radio" name="q68" value="4">4</p>
+<h3>Reduce the Risk of Patient Harm Resulting from Falls</h3>
+<p>Q69: Hospital has policies and procedures for reducing risk of patient falls.
+<input type="radio" name="q69" value="1">1
+<input type="radio" name="q69" value="2">2
+<input type="radio" name="q69" value="3">3
+<input type="radio" name="q69" value="4">4</p>
+
+<p>Q70: Hospital Management collaborate with Healthcare Professionals to develop and implement policies and procedures to reduce the risk of falls.
+ <input type="radio" name="q70" value="1">1
+<input type="radio" name="q70" value="2">2
+<input type="radio" name="q70" value="3">3
+<input type="radio" name="q70" value="4">4</p>
+
+
+  </div>
+</form>
+ 
+     <div data-role="footer"data-position="fixed"style="text-align:center;">
+         <a href="#rpsmpage6" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage8" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum7">Next</a>
+         <script>function sumf7() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum7').on('click', function() {
+    alert(sumf7());
+});</script> 
+<h5>&copy; bestratedhospitals.org</h5>
+  </div>
+</div> 
+
+<div data-role="page" id="rpsmpage8"class="rpsm">
+  <div data-role="header">
+    <h2><b>Risk & Patient Safety Management</b></h2> 
+  </div>
+    <form name="rpsm8">
+
+  <div data-role="main" class="ui-content">
+
+<p>Q71: Hospital Management regularly reviews Policies and Procedures like Fall Risk assessment and protocol in implementing measures to reduce Falls. 
+<input type="radio" name="q71" value="1">1
+<input type="radio" name="q71" value="2">2
+<input type="radio" name="q71" value="3">3
+<input type="radio" name="q71" value="4">4</p>
+
+<p>Q72: Hospital Management regularly reviews Staff feedback and minutes of meetings to assess Staff involvement in reducing Falls and implementing measures to reduce Falls. 
+<input type="radio" name="q72" value="1">1
+<input type="radio" name="q72" value="2">2
+<input type="radio" name="q72" value="3">3
+<input type="radio" name="q72" value="4">4</p>
+
+<p>Q73: Hospital ensure Healthcare Professionals assess Patients for risk of falls as indicated by change in Clinical Status, medications, etc. 
+<input type="radio" name="q73" value="1">1
+<input type="radio" name="q73" value="2">2
+<input type="radio" name="q73" value="3">3
+<input type="radio" name="q73" value="4">4</p>
+<p>Q74: Hospital reviews Patient medical records to ensure indicated Fall Risk Assessments are done. 
+<input type="radio" name="q74" value="1">1
+<input type="radio" name="q74" value="2">2
+<input type="radio" name="q74" value="3">3
+<input type="radio" name="q74" value="4">4</p>
+<p>Q75: Hospital Patient Safety Unit review Staff Knowledge of Fall Risk Protocol and observe use of fall-prevention measures during safety rounds. 
+<input type="radio" name="q75" value="1">1
+<input type="radio" name="q75" value="2">2
+<input type="radio" name="q75" value="3">3
+<input type="radio" name="q75" value="4">4</p>
+<p>Q76: Hospital has physical measures to prevent Falls like Handrails, non-slip floor surfaces etc. 
+<input type="radio" name="q76" value="1">1
+<input type="radio" name="q76" value="2">2
+<input type="radio" name="q76" value="3">3
+<input type="radio" name="q76" value="4">4</p>
+<h3>Hospital Risk Management Program.</h3>
+<p>Q77: The Hospital  assesses and addresses Risks associated with its services and operations
+<input type="radio" name="q77" value="1">1
+<input type="radio" name="q77" value="2">2
+<input type="radio" name="q77" value="3">3
+<input type="radio" name="q77" value="4">4</p>
+<p>Q78: Hospital has a Risk Management Program to reduce occurrence of undesirable events or accidents involving Patients or Staff.
+  <input type="radio" name="q78" value="1">1
+<input type="radio" name="q78" value="2">2
+<input type="radio" name="q78" value="3">3
+<input type="radio" name="q78" value="4">4</p>
+<p>Q79: Hospital has an events reporting system, which collects Information relating to risks and undesirable events.
+<input type="radio" name="q79" value="1">1
+<input type="radio" name="q79" value="2">2
+<input type="radio" name="q79" value="3">3
+<input type="radio" name="q79" value="4">4</p>
+
+<p>Q80: Hospital Management supports Quality Improvement and Safety Initiatives with Funds and Resources.
+ <input type="radio" name="q80" value="1">1
+<input type="radio" name="q80" value="2">2
+<input type="radio" name="q80" value="3">3
+<input type="radio" name="q80" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#rpsmpage7" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage9" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum8">Next</a>
+           <script>function sumf8() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum8').on('click', function() {
+    alert(sumf8());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+
+
+<div data-role="page" id="rpsmpage9"class="rpsm">
+  <div data-role="header">
+    
+  </div>
+    <form name="rpsm9">
+
+  <div data-role="main" class="ui-content">
+   
+<p>Q81: Hospital Management ensures that Risks are identified at Units, Procedures and Processes level.
+<input type="radio" name="q81" value="1">1
+<input type="radio" name="q81" value="2">2
+<input type="radio" name="q81" value="3">3
+<input type="radio" name="q81" value="4">4</p>
+
+<p>Q82: Hospital Unit Staff prioritize Identified Risks and take preventive action against the most important risks. 
+<input type="radio" name="q82" value="1">1
+<input type="radio" name="q82" value="2">2
+<input type="radio" name="q82" value="3">3
+<input type="radio" name="q82" value="4">4</p>
+
+<p>Q83: Hospital Risk Management Programs covers Risks with medical devices, blood derivatives, biological products, adverse drug reactions and prevention of nosocomial infection
+<input type="radio" name="q83" value="1">1
+<input type="radio" name="q83" value="2">2
+<input type="radio" name="q83" value="3">3
+<input type="radio" name="q83" value="4">4</p>
+<p>Q84: Hospital Risk Management Program also identifies and prevents risk in areas like diagnostic and therapeutic procedures, falls, fire safety, and malicious acts.
+<input type="radio" name="q84" value="1">1
+<input type="radio" name="q84" value="2">2
+<input type="radio" name="q84" value="3">3
+<input type="radio" name="q84" value="4">4</p>
+<p>Q85: Hospital Management evaluates the effectiveness of the Risk Management Program and the Sentinel event reporting system.
+<input type="radio" name="q85" value="1">1
+<input type="radio" name="q85" value="2">2
+<input type="radio" name="q85" value="3">3
+<input type="radio" name="q85" value="4">4</p>
+<p>Q86: Hospital Management ensure that Care Processes are designed and standardized to ensure safety of patients, visitors and Healthcare Professionals. 
+<input type="radio" name="q86" value="1">1
+<input type="radio" name="q86" value="2">2
+<input type="radio" name="q86" value="3">3
+<input type="radio" name="q86" value="4">4</p>
+<p>Q87: Hospital conducts a systematic overview of High risk care processes by measuring and monitoring risk indicators.  
+<input type="radio" name="q87" value="1">1
+<input type="radio" name="q87" value="2">2
+<input type="radio" name="q87" value="3">3
+<input type="radio" name="q87" value="4">4</p>
+<p>Q88: Hospital Unit Staff define the sentinel events to systematically analyse in Care Units by a multidisciplinary team of health professionals.
+  <input type="radio" name="q88" value="1">1
+<input type="radio" name="q88" value="2">2
+<input type="radio" name="q88" value="3">3
+<input type="radio" name="q88" value="4">4</p>
+<p>Q89: Hospital Unit Staff analyse Undesirable or Sentinel events and deploy Improvement Strategies.
+<input type="radio" name="q89" value="1">1
+<input type="radio" name="q89" value="2">2
+<input type="radio" name="q89" value="3">3
+<input type="radio" name="q89" value="4">4</p>
+
+<p>Q90: Sentinel Events analysed and prevented include unexpected death, major complications, re-operation, the occurrence of certain nosocomial infections, unplanned readmission, discharge against medical advice and transfusion accidents.
+ <input type="radio" name="q90" value="1">1
+<input type="radio" name="q90" value="2">2
+<input type="radio" name="q90" value="3">3
+<input type="radio" name="q90" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#rpsmpage8" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#rpsmpage10" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum9">Next</a>
+           <script>function sumf9() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum9').on('click', function() {
+    alert(sumf9());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+        
+        <div data-role="page" id="rpsmpage10"class="rpsm">
+  <div data-role="header">
+   
+  </div>
+    <form name="rpsm10">
+
+  <div data-role="main" class="ui-content">
+   
+<p>Q91: Hospital Management review the Result of Internal and External Assessments shortcomings regarding Safety of Patients, Visitors and Healthcare Professionals.
+<input type="radio" name="q91" value="1">1
+<input type="radio" name="q91" value="2">2
+<input type="radio" name="q91" value="3">3
+<input type="radio" name="q91" value="4">4</p>
+
+<p>Q92: Hospital Management ensure that Clinical units participate in Assessments by External bodies with specific expertise in the sub-areas in question. 
+<input type="radio" name="q92" value="1">1
+<input type="radio" name="q92" value="2">2
+<input type="radio" name="q92" value="3">3
+<input type="radio" name="q92" value="4">4</p>
+
+<p>Q93: Hospital Management ensure that reported outcomes of External Assessments result in necessary Improvement action.
+<input type="radio" name="q93" value="1">1
+<input type="radio" name="q93" value="2">2
+<input type="radio" name="q93" value="3">3
+<input type="radio" name="q93" value="4">4</p>
+
+<p>Q94: Hospital Risk Officers interview Healthcare Professionals to gain insight into the risks of incidents.
+<input type="radio" name="q94" value="1">1
+<input type="radio" name="q94" value="2">2
+<input type="radio" name="q94" value="3">3
+<input type="radio" name="q94" value="4">4</p>
+<p>Q95: Healthcare Professionals are aware of the risk impact of their own actions and make an active contribution to Patient Safety.
+<input type="radio" name="q95" value="1">1
+<input type="radio" name="q95" value="2">2
+<input type="radio" name="q95" value="3">3
+<input type="radio" name="q95" value="4">4</p>
+<p>Q96: Hospital Management stimulate Patients and Family Caregivers to be alert concerning the coordination and safety of the individual Care Processes. 
+<input type="radio" name="q96" value="1">1
+<input type="radio" name="q96" value="2">2
+<input type="radio" name="q96" value="3">3
+<input type="radio" name="q96" value="4">4</p>
+<p>Q97: Hospital Management ensures that sufficient Professional Expertise and Skills are available for Patient Care at all times.  
+<input type="radio" name="q97" value="1">1
+<input type="radio" name="q97" value="2">2
+<input type="radio" name="q97" value="3">3
+<input type="radio" name="q97" value="4">4</p>
+<p>Q98: Hospital Management supervises conduct of restricted treatment by non-independent authorized persons.
+  <input type="radio" name="q98" value="1">1
+<input type="radio" name="q98" value="2">2
+<input type="radio" name="q98" value="3">3
+<input type="radio" name="q98" value="4">4</p>
+<p>Q99: Hospital Management review records of complications, incidents, complaints and patient experience to develop Improvement Target Actions.
+<input type="radio" name="q99" value="1">1
+<input type="radio" name="q99" value="2">2
+<input type="radio" name="q99" value="3">3
+<input type="radio" name="q99" value="4">4</p>
+
+<p>Q100: Hospital Management review internal surveys and safety rounds for Risks and develop Improvement Target Actions.
+ <input type="radio" name="q100" value="1">1
+<input type="radio" name="q100" value="2">2
+<input type="radio" name="q100" value="3">3
+<input type="radio" name="q100" value="4">4</p>
+  </div>
+  </form>
+        <div data-role="footer"data-position="fixed"style="text-align:center;">
+            <a href="#rpsmpage9" class="ui-btn ui-icon-arrow-l ui-btn-icon-right">Back</a>
+         <a href="#hrmpage" class="ui-btn ui-icon-arrow-r ui-btn-icon-right"id="show_sum10">Next</a>
+           <script>function sumf8() {
+  var sum = 0;
+  $('input[type=radio]:checked').each(function(i, el) {
+    sum += Number($(el).val());
+  });
+  return sum;
+}
+
+$('#show_sum10').on('click', function() {
+    alert(sumf10());
+});</script>  
+<h5>&copy; bestratedhospitals.org</h5>
+</div>
+</div>
+
+    </body>
+</html>
